@@ -1,0 +1,40 @@
+body {
+    background-color: rgba(49, 197, 12, 0.671);
+    max-width: 525px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: darkred;
+    display: inline-flex;
+    align-items: center;
+    border-style: double;
+    border-width: 10px;
+    border-color: black;
+}
+
+h1 {
+    background-color: darkred;
+    text-align: center;
+    margin-right: 30px;
+}
+
+#profilepic{
+    margin: 30px;
+    border-style: double;
+}    
+
+footer{
+    background-color: darkred;
+    display: inline-flex;
+    border-style: double;
+    border-width: 10px;
+    border-color: black;
+}
+
+@media screen {
+    
+}
