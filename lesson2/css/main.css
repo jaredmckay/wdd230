@@ -1,0 +1,172 @@
+
+body{
+    background-color: rgb(58, 97, 211);
+}
+
+h3 {
+    background-color: aquamarine;
+    text-align: center;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+}
+
+header {
+    background-color: aquamarine;
+    text-align: center;
+    grid-column: 1 / -1;
+    padding: 1em;
+    border-style: double;
+    border-width: 10px;
+    border-color: black;
+}
+
+img{
+    max-width: 100%;
+    padding: 5px;
+    border: 1px solid black;
+    box-shadow: 5px 5px 5px #0e0101;    
+
+}
+
+.content {
+    display: grid;
+    grid-template: 1fr;
+    padding: 20px;
+    margin: auto;
+}
+
+.contrast {
+    max-width: 550px;
+    padding: 15px;  
+}
+
+.whitespace {
+    max-width: 550px;
+    padding: 15px;
+}
+
+.fittsrule {
+    max-width: 550px;
+    padding: 15px;
+}
+
+
+#firstp {
+    background-color: darkcyan;
+    padding: 15px;
+    border-style: double;
+    border-width: 10px;
+    border-color: black;
+}
+
+#secondp {
+    background-color: darkcyan;
+    padding: 15px;
+    border-style: double;
+    border-width: 10px;
+    border-color: black;
+}
+
+#thirdp {
+    background-color: darkcyan;
+    padding: 15px;
+    border-style: double;
+    border-width: 10px;
+    border-color: black;    
+}
+
+footer{
+    grid-column: 1 / -1;
+    grid-row: 5 / 6;
+    background-color: aquamarine;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    border-style: double;
+    border-width: 10px;
+    border-color: black;
+}
+
+#copyright {
+    grid-column: 2/3;
+
+}
+
+#lastmod {
+    grid-column: 1/-1;
+    grid-row: 2/3;
+    text-align: center;
+}
+ 
+@media screen and (min-width: 600px) {
+    
+    .content {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .bestbuypic {
+        max-width: 325px;
+    }
+
+    .canopspic {
+        max-width: 325px;
+    }    
+
+    .astonmartinpic {
+        max-width: 750px;
+    }    
+
+    .contrast {
+        max-width: 350px;
+        grid-column: 1 / 2;
+    }
+
+    .whitespace {
+        max-width: 350px;
+        grid-column: 2 / 3; 
+    }
+
+    .fittsrule {
+        grid-column: 1 / span 2;
+        grid-row: 4 / 5; 
+        max-width: 800;
+        margin: auto;   
+    }
+
+}
+
+@media screen and (min-width: 800px) {
+    
+    .content {
+        grid-template: 1fr 1fr 1fr;
+        max-width: 900px;
+        
+    }
+
+    header{
+        grid-column: 1 / 4;
+    }
+
+    .contrast {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        max-width: 300px;
+    }
+
+    .whitespace {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+        max-width: 300px;
+    }
+
+    .fittsrule {
+        grid-column: 3 / 4;
+        grid-row: 2 / 3;
+        max-width: 270px;
+    }
+
+    footer{
+        grid-column: 1 / 4;
+    }
+
+}
