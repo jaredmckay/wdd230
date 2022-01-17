@@ -1,4 +1,6 @@
-
+* {
+    
+}
 body{
     background-color: rgb(58, 97, 211);
 }
@@ -9,6 +11,19 @@ h3 {
     border-style: solid;
     border-width: 3px;
     border-color: black;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    background-color: darkcyan;
+    text-align: center;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+    padding: .3em;
+    display: block;
+    margin-bottom: .75em;    
+    font-family: 'Heebo', sans-serif;
 }
 
 header {
@@ -19,14 +34,14 @@ header {
     border-style: double;
     border-width: 10px;
     border-color: black;
+    font-family: 'Open Sans', sans-serif;
 }
 
 img{
     max-width: 100%;
     padding: 5px;
     border: 1px solid black;
-    box-shadow: 5px 5px 5px #0e0101;    
-
+    box-shadow: 5px 5px 5px #0e0101;
 }
 
 .content {
@@ -58,6 +73,7 @@ img{
     border-style: double;
     border-width: 10px;
     border-color: black;
+    font-family: 'Heebo', sans-serif;
 }
 
 #secondp {
@@ -66,6 +82,7 @@ img{
     border-style: double;
     border-width: 10px;
     border-color: black;
+    font-family: 'Heebo', sans-serif;
 }
 
 #thirdp {
@@ -74,6 +91,7 @@ img{
     border-style: double;
     border-width: 10px;
     border-color: black;    
+    font-family: 'Heebo', sans-serif;
 }
 
 footer{
@@ -85,6 +103,7 @@ footer{
     border-style: double;
     border-width: 10px;
     border-color: black;
+    font-family: 'Open Sans', sans-serif;
 }
 
 #copyright {
