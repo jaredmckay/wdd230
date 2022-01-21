@@ -1,3 +1,4 @@
+
 body{
     background-color: rgb(58, 97, 211);
 }
@@ -5,103 +6,91 @@ body{
 h3 {
     background-color: aquamarine;
     text-align: center;
-    border-style: solid;
-    border-width: 3px;
-    border-color: black;
+    border: 1px solid black;
+    box-shadow: 5px 5px 5px #0e0101;
     font-family: 'Open Sans', sans-serif;
+    padding: .4em;
+    max-width: 90%;
 }
+
 
 a {
     background-color: darkcyan;
     text-align: center;
-    border-style: solid;
-    border-width: 3px;
-    border-color: black;
-    padding: .3em;
-    display: block;
+    border: 1px solid black;
+    box-shadow: 5px 5px 5px #0e0101;
+    padding: .4em;
     margin-bottom: .75em;    
+    display: block;
     font-family: 'Heebo', sans-serif;
+    color:azure;
+    max-width: 90%;
+}
+a:visited{
+    color: rgb(236, 240, 27);
 }
 
-header {
+header, footer{
     background-color: aquamarine;
     text-align: center;
-    grid-column: 1 / -1;
     padding: 1em;
-    border-style: double;
-    border-width: 10px;
-    border-color: black;
+    margin: 2em;
     font-family: 'Open Sans', sans-serif;
+    border: 1px solid black;
+    box-shadow: 5px 5px 5px #0e0101
 }
 
+.fittsrule, .contrast, .whitespace{
+    margin: 1em;
+}
+
+
 img{
-    max-width: 100%;
+    max-width: 90%;
     padding: 5px;
     border: 1px solid black;
     box-shadow: 5px 5px 5px #0e0101;
 }
 
-.content {
-    display: grid;
-    grid-template: 1fr;
-    padding: 20px;
-    margin: auto;
-}
-
-.contrast {
-    max-width: 550px;
-    padding: 15px;  
-}
-
-.whitespace {
-    max-width: 550px;
-    padding: 15px;
-}
-
-.fittsrule {
-    max-width: 550px;
-    padding: 15px;
-}
-
 
 #firstp {
-    background-color: darkcyan;
-    padding: 15px;
-    border-style: double;
-    border-width: 10px;
-    border-color: black;
+    border: 1px solid black;
+    box-shadow: 5px 5px 5px #0e0101;
     font-family: 'Heebo', sans-serif;
+    background-color: darkcyan;
+    padding: .4em;
+    color: azure;
+    max-width: 90%;
+    
 }
 
 #secondp {
-    background-color: darkcyan;
-    padding: 15px;
-    border-style: double;
-    border-width: 10px;
-    border-color: black;
+    border: 1px solid black;
+    box-shadow: 5px 5px 5px #0e0101;
     font-family: 'Heebo', sans-serif;
+    background-color: darkcyan;
+    padding: .4em;
+    color: azure;
+    max-width: 90%;
+    
 }
 
-#thirdp {
-    background-color: darkcyan;
-    padding: 15px;
-    border-style: double;
-    border-width: 10px;
-    border-color: black;    
+#thirdp{
+    border: 1px solid black;
+    box-shadow: 5px 5px 5px #0e0101;
     font-family: 'Heebo', sans-serif;
+    background-color: darkcyan;
+    padding: .4em;
+    color: azure;
+    max-width: 90%;
+    
 }
 
 footer{
-    grid-column: 1 / -1;
-    grid-row: 5 / 6;
-    background-color: aquamarine;
     display: grid;
     grid-template-columns: auto auto auto auto auto;
-    border-style: double;
-    border-width: 10px;
-    border-color: black;
-    font-family: 'Open Sans', sans-serif;
 }
+
 
 #copyright {
     grid-column: 2/3;
@@ -116,73 +105,52 @@ footer{
  
 @media screen and (min-width: 600px) {
     
-    .content {
+    .content{
+        display: grid;
         grid-template-columns: 1fr 1fr;
+        margin: 2em;
+        max-width: 95%;
     }
 
-    .bestbuypic {
-        max-width: 325px;
+    .fittsrule{
+        grid-column: span 2;
     }
 
-    .canopspic {
-        max-width: 325px;
-    }    
-
-    .astonmartinpic {
-        max-width: 750px;
-    }    
-
-    .contrast {
-        max-width: 350px;
-        grid-column: 1 / 2;
+    #bestbuypic {
+        margin-right: 1em;
     }
 
-    .whitespace {
-        max-width: 350px;
-        grid-column: 2 / 3; 
-    }
-
-    .fittsrule {
-        grid-column: 1 / span 2;
-        grid-row: 4 / 5; 
-        max-width: 800;
-        margin: auto;   
-    }
 
 }
 
 @media screen and (min-width: 800px) {
     
     .content {
-        grid-template: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         max-width: 900px;
+        margin: auto;
         
     }
 
+    header, footer{
+        max-width: 852px;
+        margin: auto;
+    }
+
     header{
-        grid-column: 1 / 4;
-    }
-
-    .contrast {
-        grid-column: 1 / 2;
-        grid-row: 2 / 3;
-        max-width: 300px;
-    }
-
-    .whitespace {
-        grid-column: 2 / 3;
-        grid-row: 2 / 3;
-        max-width: 300px;
-    }
-
-    .fittsrule {
-        grid-column: 3 / 4;
-        grid-row: 2 / 3;
-        max-width: 270px;
+        margin-top: 2em;
     }
 
     footer{
-        grid-column: 1 / 4;
+        margin-bottom: 2em;
     }
+
+    .fittsrule, .contrast, .whitespace{
+        grid-column: auto;
+        margin: 1em;
+    }
+
+
+
 
 }
