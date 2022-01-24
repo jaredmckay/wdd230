@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css" type="text/css"/>
+    <link rel="stylesheet" href="css/main.css" type="text/css"/>
+    <script defer src="js/dates.js"></script>
 </head>
 <body>
     
@@ -14,25 +20,29 @@
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="color-scheme.html">Color Scheme</a></li>
+                <li><a href="target-audience.html">Target Audience</a></li>
                 <li><a href="typography.html">Typography</a></li>
             </ul>
         </nav>
     </header>
 
-    <h2>Color Palette</h2>
+    <div class="content">
 
-    <a href="https://coolors.co/fefffe-5c9ead-1c448e-92828d">https://coolors.co/fefffe-5c9ead-1c448e-92828d</a>
+        <h2>Color Palette</h2>
 
-    <div class="color-boxes">
-        <p>Primary color:'Dark Cornflower Blue' Code:'1C448E'</p>
-        <p>Secondary color: 'Cadet Blue' Code: 5C9EAD</p>
-        <p>Accent color 1: 'White' Code: FEFFFE</p>
-        <p>Acent color 2: 'Taupe Gray' Code: 92828D</p>
+        <a href="https://coolors.co/fefffe-5c9ead-1c448e-92828d">https://coolors.co/fefffe-5c9ead-1c448e-92828d</a>
+
+        <div class="color-boxes">
+            <p id="primary">Primary color: 'Dark Cornflower Blue' Code:'1C448E'</p>
+            <p id="secondary">Secondary color: 'Cadet Blue' Code: 5C9EAD</p>
+            <p id="accent-1">Accent color 1: 'White' Code: FEFFFE</p>
+            <p id="accent-2">Accent color 2: 'Taupe Gray' Code: 92828D</p>
+        </div>
     </div>
-
     <footer>
-
+        <p id="copyright">&copy; <p id="copyjava"></p>
+        <p id="footnote">WDD-230 Jared McKay</p>
+        <p id="lastmod"></p>
     </footer>
 
 </body>

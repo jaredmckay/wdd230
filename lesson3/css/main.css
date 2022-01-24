@@ -1,0 +1,131 @@
+
+header,
+footer {
+	background-color: #1C448E;
+	display: flex;
+	flex-flow: column;
+	padding: 10px;
+    color: #fefffe;
+}
+
+nav {
+	background-color: #5c9ead;
+	text-align: center;
+	box-shadow: 0 2px 15px gray;
+}
+nav ul {
+	list-style-type: none;
+	padding: 0;
+}
+nav ul li a {
+    display: block;
+	color: #fff;
+	text-align: center;
+	padding: 0.75rem;
+	text-decoration: none;
+	font-size: 0.95rem;
+	background: linear-gradient(90deg, transparent, #fefffe, transparent) top /
+		var(--d, 0) 10px no-repeat;
+	transition: 0.5s;
+}
+nav a:hover {
+	/* 	background-color: #bbb;
+	color: #36454f; */
+	--d: 75%;
+}
+.active {
+	color: yellow;
+}
+
+
+img {
+    padding: 1em;
+    margin: auto;
+}
+
+.content {
+    padding: 2em;
+}
+
+#primary {
+    background-color: #1c448e;
+    color: #fefffe;
+    border: 1px solid black;
+    padding: 1em;
+}
+
+#secondary {
+    background-color: #5c9ead;
+    color: #fefffe;
+    border: 1px solid black;
+    padding: 1em;
+}
+
+#accent-1 {
+    background-color: #fefffe;
+    border: 1px solid black;
+    padding: 1em;
+}
+
+#accent-2 {
+    background-color: #92828d;
+    color: #fefffe;
+    border: 1px solid black;
+    padding: 1em;
+}
+
+footer{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+}
+
+
+#copyright {
+    grid-column: 2/3;
+}
+
+#footnote{
+    padding-left: .5em;
+}
+
+#lastmod {
+    grid-column: 1/-1;
+    grid-row: 2/3;
+    text-align: center;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Luxurious Roman', cursive;
+    margin: auto;
+}
+
+p {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+
+@media only screen and (min-width: 37.5em) {
+	
+    body{
+        max-width: 800px;
+        margin: auto;
+    }
+
+    h1 {
+		font-size: 1.5rem;
+        grid-column: 2/3;
+    }
+
+    img {
+        max-width: 125px;
+        margin: auto;
+    }
+    nav ul { display: flex; }
+    nav ul li { flex: 1 1 auto; }
+
+    nav ul {
+    display: flex;
+    }
+
+}
