@@ -1,162 +1,175 @@
 /* Mobile screen viewing */
 
 * {
+margin: auto;
+}
+
+body{
+    max-width: 800px;
     margin: auto;
-  }
-  
-  header {
-      display: grid;
-  }
-  
-  
-  
-  nav ul {
-      display: none;
-          list-style: none;
-  }
-  nav ul.open {display: block;}
-  
-  
-  .menuBtn {
-      margin: .2em;
-      background-color: transparent;
-      border: none;
-      font-size: 2rem;
-      color: #555;
-  }
-  
-  
-  nav ul li a {
-      display: block;
-      padding: .8rem 2vw;
-      text-decoration: none;
-      color: #333;
-      border-top: 1px solid rgba(0,0,0,0.5);
-  }
-  
-  ul li:first-child {
-      display: block;
-  }
-  
-  
-  nav ul li:active {
-      background-color: rgba(0,0,0,0.2);
-  }
-  
-  nav ul li a:hover {
-      background-color: rgba(0,0,0,0.3);
-  }
-  
-  nav {
-      grid-column: 5/6;
-      margin-top: 2em;
-  
-  }
-  
-  #headlogo {
-      max-width: 55px;
-      margin: 0.75em;
-      margin-top: 1.5em;
-  
-  }
-  
-  #facebook {
-      grid-column: 3/4;
-      margin-top: 2em;
-      margin-left: 1.5em;
-  
-  }
-  
-  #linkedin {
-      grid-column: 4/5;
-      margin-top: 2em;
-  
-  }
-  
-  .logobox {
-      max-width: 50px;
-  }
-  
-  
-  #menuBtn {
-      background-color: #92828d;
-  
-  }
-  
-  .busimg {
-      border-radius: 150px 150px 150px 150px;
-      grid-column: 1/2;
-  }
-  
-  #ti1{
-      margin-left: 1em;
-  }
-  
-  #ti2 {
-      grid-column: 2/3;
-      grid-row: 2/3;
-      margin-top: -1.5em;
-      margin-left: 1em;
-  }
-  
-  aside {
-      grid-row: 3/4;
-      grid-column: span 5;
-      text-align: center;
-      background-color: #92828d;
-      padding: .5em;
-      margin: .75em;
-      font-size: 1.25em;
-      margin: none;
-  }
-  
-  header, footer {
-      background-color: #1c448e;
-      color: #fff;
-  }
-  
-  
-  .ph1, .ph2, .ph3, .ph4, .ph5, .ph6 {
-      min-height: 10em;
-  }
-  
-  
-  footer {
+}
+
+header {
     display: grid;
-  }
-  
-  #chamberfooter {
-      text-align: center;
-      padding-top: 1em;
-      border-bottom: 1px solid;
-      padding-bottom: 1em;
-  }
-  
-  #chamberfooter > p {
-      padding-top: 1em;
-  }
-  
-  #footlogo {
-      padding-top: 1em;
-  
-  } 
-  
-  #classfooter {
+}
+
+
+
+nav ul {
+    display: none;
+    list-style: none;
+}
+nav ul.open {
+    display: block;
+    position: absolute;
+    top:10%;
+    right: 4%;
+    z-index: 1;
+}
+
+
+.menuBtn {
+    margin: .2em;
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    color: #555;
+}
+
+
+nav ul li a {
+    display: block;
+    padding: .8rem 2vw;
+    text-decoration: none;
+    background-color: #555;
+    color: #fff;
+    border-top: 1px solid rgba(0,0,0,0.5);
+    z-index: 1;
+}
+
+ul li:first-child {
+    display: block;
+}
+
+
+nav ul li:active {
+    background-color: rgba(0,0,0,0.2);
+}
+
+nav ul li a:hover {
+    background-color: rgba(0,0,0,0.3);
+}
+
+nav {
+    grid-column: 4/5;
+    margin-top: 2em;
+
+}
+
+#headlogo {
+    max-width: 55px;
+    margin: 0.75em;
+    margin-top: 1.5em;
+
+}
+
+#sociallink{
+    grid-column: 3/4;
+}
+
+.logobox {
+    max-width: 50px;
+}
+
+
+#menuBtn {
+    background-color: #92828d;
+
+}
+
+.busimg {
+    border-radius: 150px 150px 150px 150px;
+    grid-column: 1/2;
+}
+
+#title {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+#ti1{
+    margin-left: 1em;
+}
+
+#ti2 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin-top: -1.5em;
+    margin-left: 1em;
+}
+
+aside {
+    grid-row: 3/4;
+    grid-column: span 4;
     text-align: center;
-    display: grid;
-    margin-top: 1em;
-  }
-  
-  #footcont > p {
-      padding-top: 1em;
-  }
-  
-  #footcont {
+    background-color: #92828d;
+    padding: .5em;
+    margin: .75em;
+    font-size: 1.25em;
+    margin: none;
+}
+
+header, footer {
+    background-color: #1c448e;
+    color: #fff;
+}
+
+
+.ph {
+    min-height: 10em;
+    min-width: 90%;
+    background-color: lightgrey;
+    border: 1px solid black;
+    margin: 1em;
+    
+}
+
+
+footer {
+display: grid;
+}
+
+#chamberfooter {
     text-align: center;
-  
-  }
-  
-  #copy {
-    display: flex;
-  }
-  
+    padding-top: 1em;
+    border-bottom: 1px solid;
+    padding-bottom: 1em;
+}
+
+#chamberfooter > p {
+    padding-top: 1em;
+}
+
+#footlogo {
+    padding-top: 1em;
+
+} 
+
+#classfooter {
+text-align: center;
+display: grid;
+margin-top: 1em;
+}
+
+#footcont > p {
+    padding-top: 1em;
+}
+
+#footcont {
+text-align: center;
+
+}
+
+#copy {
+display: flex;
+}
