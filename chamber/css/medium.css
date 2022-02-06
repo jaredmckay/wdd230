@@ -27,7 +27,15 @@
     }
     #ph3 {
         grid-column: span 3;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
+
+    #ph3txt {
+        display: none;
+    } 
+
+
     #ph4 {
         grid-column: span 3;
     }
