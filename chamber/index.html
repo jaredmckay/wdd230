@@ -42,7 +42,12 @@
     </header>
     <main>
         <div class="ph" id="ph1">
-            <img id="heroimg" src="images/pasyline.jpg" alt="Prince Albert Skyline">
+            <picture class="hero-img">
+                <source media="(min-width: 50em)" srcset="images/rsz_hero_img_lrg.jpg">
+                <source media="(min-width: 32em)" srcset="images/rsz_hero_img_med.jpg">
+                <img src="images/rsz_hero_img_small.jpg" alt="Hero Image">
+            </picture>
+            <!-- <img id="heroimg" src="images/pasyline.jpg" alt="Prince Albert Skyline"> -->
             <button class="join-us" id="hero-button">Join the Chamber</button>
         </div>
 
@@ -87,8 +92,10 @@
         </div>
 
         <div class="ph" id="ph6">
-            <img id="#weather" src="images/weathersnip.png" alt="weather for Prince Albert">
-
+            <p>Currently: <span id="temp">30</span>&#176;F</p>
+            <p>Wind Speed: <span id="speed">20</span> mph</p>
+            <p>Feels like: <span id="windchill"></span></p>
+            <script src="js/temp.js"></script>
         </div>
 
     </main>
