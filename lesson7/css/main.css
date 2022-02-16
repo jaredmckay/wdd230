@@ -1,0 +1,8 @@
+* {
+    margin: auto;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+}

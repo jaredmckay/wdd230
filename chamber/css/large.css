@@ -41,6 +41,10 @@
         
     }
 
+    #popup{
+        left: 6em;
+    }
+
     #hero-button {
         left: 150px;
         margin: auto;

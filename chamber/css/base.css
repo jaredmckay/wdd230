@@ -126,7 +126,6 @@ header, footer {
 
 
 .ph {
-    min-height: 10em;
     min-width: 90%;
     background-color: lightgrey;
     border: 1px solid black;
@@ -135,11 +134,21 @@ header, footer {
 }
 
 #heroimg {
-    width: 100%;
+    max-width: 100%;
+}
+
+#popup {
+    position: absolute;
+    max-width: 150px;
+    top: 5em;
+    left: .75em;
+    background-color: rgba(0,0,0,0.5);
+    color: #fff;
 }
 
 .join-us {
     padding: .75em;
+    max-width: 150px;
 }
 
 #hero-button {
@@ -210,3 +219,4 @@ text-align: center;
 #copy {
 display: flex;
 }
+
