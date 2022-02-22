@@ -1,7 +1,7 @@
 /* Mobile screen viewing */
 
 * {
-margin: auto;
+    margin: auto;
 }
 
 body{
@@ -139,9 +139,6 @@ header, footer {
 
 #popup {
     position: absolute;
-    max-width: 150px;
-    top: 5em;
-    left: .75em;
     background-color: rgba(0,0,0,0.5);
     color: #fff;
 }
@@ -182,7 +179,7 @@ img {
 }
 
 footer {
-display: grid;
+    display: grid;
 }
 
 #chamberfooter {
@@ -202,9 +199,9 @@ display: grid;
 } 
 
 #classfooter {
-text-align: center;
-display: grid;
-margin-top: 1em;
+    text-align: center;
+    display: grid;
+    margin-top: 1em;
 }
 
 #footcont > p {
@@ -212,11 +209,35 @@ margin-top: 1em;
 }
 
 #footcont {
-text-align: center;
+    text-align: center;
 
 }
 
 #copy {
-display: flex;
+    display: flex;
 }
 
+/* discovery specific css */
+
+.disContent {
+    display: grid;
+     
+}
+
+.disPic {
+    padding: 1em;
+    max-width: 90%;
+    border-radius: 100px; 
+    width:35%; 
+    margin: 0 3em .5em 0; 
+    float: left; 
+    shape-outside: circle();
+}
+
+.disPic:hover {
+    width: 90%;
+    margin: auto;
+    float: center;
+    shape-outside: none;
+
+}

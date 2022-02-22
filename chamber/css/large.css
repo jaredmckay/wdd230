@@ -101,4 +101,11 @@
         margin-top: -1em;
     }
 
+    /* discovery specific css */
+
+    .disContent {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
 }
