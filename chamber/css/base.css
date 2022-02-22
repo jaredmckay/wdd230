@@ -224,17 +224,16 @@ footer {
      
 }
 
-.disPic {
+.dispics {
     padding: 1em;
     max-width: 90%;
     border-radius: 100px; 
     width:35%; 
     margin: 0 3em .5em 0; 
-    float: left; 
     shape-outside: circle();
 }
 
-.disPic:hover {
+.dispics:hover {
     width: 90%;
     margin: auto;
     float: center;
