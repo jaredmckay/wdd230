@@ -48,6 +48,13 @@
 
     }
 
+    .disContent{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #arthauser {
+        grid-column: span 2;
+    }
 
 
 

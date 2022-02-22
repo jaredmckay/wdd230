@@ -228,15 +228,16 @@ footer {
     padding: 1em;
     max-width: 90%;
     border-radius: 100px; 
-    width:35%; 
+    width: 150px; 
     margin: 0 3em .5em 0; 
-    shape-outside: circle();
+    
 }
 
 .dispics:hover {
     width: 90%;
     margin: auto;
     float: center;
-    shape-outside: none;
+    margin: auto;
+    border-radius: 0;
 
 }
