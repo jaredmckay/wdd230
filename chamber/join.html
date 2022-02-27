@@ -31,7 +31,6 @@
             <a class="social" id="facebook" href="https://www.facebook.com/" target="_blank"><img src="images/facebooklogos.jpg" alt="Facebook Logo"></a>
             <a class="social" id="linkedin" href="https://www.linkedin.com/" target="_blank"><img src="images/linkedinlogo.jpg" alt="Linkedin Logo"></a>
         </div>
-        <div id="popup">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</div>
         <aside></aside>   
 
         <nav>
@@ -44,65 +43,41 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
+        <div id="popup">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</div>
     </header>
-    <main class="indexMain">
-        <div class="ph" id="ph1">
-            <picture class="hero-img">
-                <source media="(min-width: 50em)" srcset="images/rsz_hero_img_lrg.jpg">
-                <source media="(min-width: 32em)" srcset="images/rsz_hero_img_med.jpg">
-                <img src="images/rsz_hero_img_small.jpg" alt="Hero Image">
-            </picture>
-            <!-- <img id="heroimg" src="images/pasyline.jpg" alt="Prince Albert Skyline"> -->
-            <button class="join-us" id="hero-button">Join the Chamber</button>
+
+    <main>
+        <div class="jocontent">
+            <form method="get" action="thankyou.html">
+                <fieldset>
+                    <legend>Primary Contact</legend>
+                    <label for="fname" class="jotop"> First Name* <input type="text" name="fname" id="fname" required></label>
+                    <label for="lname" class="jotop"> Last Name* <input type="text" name="lname" id="lname" required></label>
+                    <label for="phone" class="jotop"> Phone* <input type="tel" name="phone" placeholder="1235551234" id="phone" required></label>
+                    <label for="email" class="jotop"> Email* <input type="email" name="email" id="email" required placeholder="person@email.com"></label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Membership Info</legend>
+                    <label class="jotop" for="jname">Job Title <input type="text" id="jname" name="jname"></label>
+                    <label class="jotop" for="buisname">Business Name<input type="text" id="buisname" name="buisname" required></label>
+                    <label class="jotop" for="buisdisc">Business Discription<input type="text" id="buisdisc"></label>
+                    <label class="jotop" for="url">Buisness Website<input type="url" name="url" id="url" placeholder="https://"></label>
+                </fieldset> 
+
+                <fieldset>
+                    <legend>Membership Choice</legend>
+                    <div>Membership</div>
+                    <label class="josbs" for="membership"><input type="radio" name="membership" id="membership" value="non-profit">Non-profit</label>
+                    <label class="josbs" for="membership"><input type="radio" name="membership" id="membership" value="bronze">Bronze</label>
+                    <label class="josbs" for="membership"><input type="radio" name="membership" id="membership" value="Silver">Silver</label>
+                    <label class="josbs" for="membership"><input type="radio" name="membership" id="membership" value="Gold">Gold</label>
+                </fieldset>
+                <input class="jobtn" type="submit" value="join chamber">
+            </form>
         </div>
-
-        <div class="ph" id="ph2">
-            <h2>News Release</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores itaque ipsum cumque laboriosam pariatur aliquam amet at dolorum ducimus. Vel delectus saepe sint temporibus quae perspiciatis illo veniam obcaecati magnam.</p>
-        </div>
-
-        <div class="ph" id="ph3">
-            <p id="ph3txt">Place holder 3</p>
-            <div class="highlight" id="hl1">
-                <p class="hltitle">JK Consulting</p>
-                <img class="hlimg" src="images/rsz_consulting.jpg" alt="">
-                <p class="hllogan">We aint no joke!</p>
-                <p>contact@jkconsulting.com </p>
-            </div>
-            <div class="highlight" id="hl2">
-                <p class="hltitle">Beaver Tree Trims</p>
-                <img class="hlimg" src="images/rsz_beavertreetrim.jpg" alt="">
-                <p class="hllogan">Let us trim your trees naturally</p>
-                <p>contact@beavertreetrim.com</p>
-            </div>            
-            <div class="highlight" id="hl3">
-                <p class="hltitle">Bird Construction</p>
-                <img class="hlimg" src="images/rsz_constructionlogo.jpg" alt="">
-                <p class="hllogan">Let us build your nest.</p>
-                <p>contact@birdconstruction.com</p>
-            </div>
-        </div>
-
-        <div class="ph" id="ph4">
-            <p>Join us!</p>
-            <button class="join-us"> Join Us</button>
-        </div>
-
-
-        <div class="ph" id="ph5">
-            <p>Notable Event</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id enim eum dolores inventore</p>
-
-        </div>
-
-        <div class="ph" id="ph6">
-            <p>Currently: <span id="temp">30</span>&#176;F</p>
-            <p>Wind Speed: <span id="speed">20</span> mph</p>
-            <p>Feels like: <span id="windchill"></span></p>
-            
-        </div>
-
     </main>
+
 
     <footer>
         <img class ="busimg" id="footlogo" src="images/rsz_lcc.jpg" alt="LakeLand Chamber of Commerce Logo">
@@ -129,4 +104,3 @@
 
 </body>
 </html>
-

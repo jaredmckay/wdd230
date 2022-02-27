@@ -111,4 +111,10 @@
     #arthauser {
         grid-column: span 3;
     }
+
+    /* Join page specific css */
+
+    .jobtn {
+        margin: auto auto 2rem 12rem;
+    }
 }
