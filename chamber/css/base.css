@@ -307,3 +307,27 @@ form label.jotop input:required:valid {
     margin: auto auto 1rem 2rem;
 
 }
+
+/* Thank you page specific css */
+.thacontent {
+    min-height: 32rem;
+    text-align: center;
+    padding-top: 15rem;  
+}
+
+.thankcard {
+    background-color: #92828d;
+    border: solid 1px black;
+    max-width: 70%;
+    padding: 4rem;
+    color: #fff;
+    box-shadow: 5px 8px #555;
+}
+.thanks {
+    font-size: 2rem;
+
+ }
+
+#thankheader {
+     font-weight: bold;
+ }
