@@ -8,7 +8,7 @@ fetch(requestURL)
   .then(function (jsonObject) {
     console.table(jsonObject);  // temporary checking for valid response and data parsing
     const directory = jsonObject['business'];
-    business.forEach(displayCard);
+    directory.forEach(displayCard);
   });
 
   function displayCard(directory) {
@@ -21,14 +21,14 @@ fetch(requestURL)
     let logo = document.createElement('img');
 
     // Change the textContent property of the h2 element to contain the prophet's full name
-    busname.textContent = `${business.name}`;
-    phone.textContent = `The ${business.phone} President of the Church`;
-    website.textContent = `Date of Birth: ${business.website}`;
-    moto.textContent = `Place of Birth: ${business.moto}`;
+    busname.textContent = `${directory.name}`;
+    phone.textContent = `The ${directory.phone} President of the Church`;
+    website.textContent = `Date of Birth: ${directory.website}`;
+    moto.textContent = `Place of Birth: ${directory.moto}`;
 
     // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values. (Fill in the blank with the appropriate variable).
-    portrait.setAttribute('src', business.logo);
-    portrait.setAttribute('alt', `${business.name} Logo`); 
+    portrait.setAttribute('src', directory.logo);
+    portrait.setAttribute('alt', `${directory.name} Logo`); 
     portrait.setAttribute('loading', 'lazy');
 
     // Add/append the section(card) with the h2 element
