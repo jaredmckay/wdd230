@@ -8,26 +8,9 @@ fetch(requestURL)
   .then(function (jsonObject) {
     console.table(jsonObject);  // temporary checking for valid response and data parsing
     const directory = jsonObject['business'];
-    prophets.forEach(displayBuisness);
+    business.forEach(displayBuisness);
   });
 
-  function displaySuffix(prophet) {
-
-    switch (prophet.order) {
-      case 1:
-        order = `${prophet.order} st`;
-        break;
-      case 2:
-        order = `${prophet.order} nd`;
-        break;
-      case 3:
-        order = `${prophet.order} rd`;
-        break;
-      default:
-        order = `${prophet.order} th`;
-        break; 
-    }
-  }
   function displayCard(directory) {
     // Create elements to add to the document
     let card = document.createElement('section');
