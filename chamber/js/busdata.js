@@ -8,7 +8,7 @@ fetch(requestURL)
   .then(function (jsonObject) {
     console.table(jsonObject);  // temporary checking for valid response and data parsing
     const directory = jsonObject['business'];
-    business.forEach(displayBuisness);
+    business.forEach(displayCard);
   });
 
   function displayCard(directory) {
