@@ -27,9 +27,39 @@ fetch(requestURL)
     moto.textContent = `Place of Birth: ${directory.moto}`;
 
     // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values. (Fill in the blank with the appropriate variable).
-    portrait.setAttribute('src', directory.logo);
-    portrait.setAttribute('alt', `${directory.name} Logo`); 
-    portrait.setAttribute('loading', 'lazy');
+    logo.setAttribute('src', directory.logo);
+    logo.setAttribute('alt', `${directory.name} Logo`); 
+    logo.setAttribute('loading', 'lazy');
+
+    // Add/append the section(card) with the h2 element
+    card.appendChild(busname);
+    card.appendChild(phone)
+    card.appendChild(website);
+    card.appendChild(moto);
+    card.appendChild(logo);
+
+    // Add/append the existing HTML div with the cards class with the section(card)
+    document.querySelector('div.cards').appendChild(card);
+  }
+
+  function displayTable(directory) {
+    // Create elements to add to the document
+    let card = document.createElement('table');
+    let busname = document.createElement('tr');
+    let phone = document.createElement('tr');
+    let website = document.createElement('tr');
+    let moto = document.createElement('tr');
+
+    // Change the textContent property of the h2 element to contain the prophet's full name
+    busname.textContent = `${directory.name}`;
+    phone.textContent = `The ${directory.phone} President of the Church`;
+    website.textContent = `Date of Birth: ${directory.website}`;
+    moto.textContent = `Place of Birth: ${directory.moto}`;
+
+    // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values. (Fill in the blank with the appropriate variable).
+    logo.setAttribute('src', directory.logo);
+    logo.setAttribute('alt', `${directory.name} Logo`); 
+    logo.setAttribute('loading', 'lazy');
 
     // Add/append the section(card) with the h2 element
     card.appendChild(busname);
