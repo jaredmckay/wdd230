@@ -1,0 +1,173 @@
+{ 
+    "business" : [
+        {
+            "name": "Bird Construction",
+            "moto": "Let us build nest",
+            "membership": "Gold",
+            "phone": "306-555-1212",
+            "logo": "link to photo",
+            "email": "contact@birdconstruction.com",
+            "fname": "Timothy",
+            "lname": "Bird",
+            "jtitle": "Owner/Operator",
+            "website": "https://www.birdconstructionsk.com"
+            
+            
+        },
+        {
+            "name": "Micheal Scott Paper Company",
+            "moto": "Lowest prices in town",
+            "membership": "Gold",
+            "phone": "306-555-1212",
+            "logo": "link to photo",
+            "email": "contact@mspc.com",
+            "fname": "Micheal",
+            "lname": "Scott",
+            "jtitle": "President",
+            "website": "https://www.mspc.com"
+            
+            
+        },
+        {
+            "name": "Beaver Tree trimming",
+            "moto": "Let us trim your trees",
+            "membership": "Gold",
+            "phone": "306-555-2121",
+            "logo": "link to photo",
+            "email": "contact@btreetrim.com",
+            "fname": "Justin",
+            "lname": "Beaver",
+            "jtitle": "CEO",
+            "website": "https://www.beavertreetrimming.com"
+            
+            
+        },
+        {
+            "name": "JK Consulting",
+            "moto": "We ain't no joke",
+            "membership": "Gold",
+            "phone": "306-555-1519",
+            "logo": "link to photo",
+            "email": "contact@",
+            "fname": "Julie",
+            "lname": "konner",
+            "jtitle": "Owner/Operator",
+            "website": "https://www.jkconsulting.com"
+            
+            
+        },
+        {
+            "name": "Outhouse insurance",
+            "moto": "Don't let life catch you with your pants down",
+            "membership": "Gold",
+            "phone": "306-555-9870",
+            "logo": "link to photo",
+            "email": "contact@outhouseinsurance.com",
+            "fname": "John",
+            "lname": "Lavatory",
+            "jtitle": "CFO",
+            "website": "https://www.outhouseinsurance.com"
+            
+            
+        },
+        {
+            "name":"Shoe La La",
+            "moto": "Everyone is Cinderella here",
+            "membership": "Gold",
+            "phone": "306-555-9870",
+            "logo": "link to photo",
+            "email": "contact@shoelala.com",
+            "fname": "Fairy",
+            "lname": "Godmother",
+            "jtitle": "CFO",
+            "website": "https://www.shoelala.com"
+            
+            
+        },
+        {
+            "name": "Todd Sporting Goods",
+            "moto": "For all your sporting needs",
+            "membership": "Silver",
+            "phone": "306-555-7950",
+            "logo": "link to photo",
+            "email": "contact@toddsportinggoods.com",
+            "fname": "Todd",
+            "lname": "Sport",
+            "jtitle": "Owner/Operator",
+            "website": "https://www.toddsportinggoods.com"
+            
+            
+        },
+        {
+            "name": "The Findland Chefs",
+            "moto": "Blork Blork Blork",
+            "membership": "Silver",
+            "phone": "306-555-9870",
+            "logo": "link to photo",
+            "email": "contact@findlandchefs.com",
+            "fname": "Fin",
+            "lname": "Land",
+            "jtitle": "Head Chef/Owner",
+            "website": "https://www.findlandchefs.com"
+            
+            
+        },
+        {
+            "name": "Flask Lab Equipment",
+            "moto": "Feep Feep Feep",
+            "membership": "Bronze",
+            "phone": "306-555-7800",
+            "logo": "link to photo",
+            "email": "contact@flasklabequipment.com",
+            "fname": "Flask",
+            "lname": "Muppet",
+            "jtitle": "CEO",
+            "website": "https://www.flasklabequipment.com"
+            
+            
+        },
+        {
+            "name": "Ash Animal Control",
+            "moto": "Got to catch them all",
+            "membership": "Bronze",
+            "phone": "306-555-9870",
+            "logo": "link to photo",
+            "email": "contact@ashanimalcontrol.com",
+            "fname": "Ash",
+            "lname": "Katchem",
+            "jtitle": "Owner/operator",
+            "website": "https://www.ashanimalcontrol.com"
+            
+            
+        },
+        {
+            "name": "Student Aid",
+            "moto": "Every person deseves higher education",
+            "membership": "Non-profit",
+            "phone": "306-555-8739",
+            "logo": "link to photo",
+            "email": "contact@studentaidsk.com",
+            "fname": "Mallory",
+            "lname": "Laeducateur",
+            "jtitle": "Chair of the board",
+            "website": "https://www.studentaidsk.com"
+            
+            
+        },
+        {
+            "name": "CanDo",
+            "moto": "Helping municipalities with high risk residents",
+            "membership": "Non-Profit",
+            "phone": "306-555-9870",
+            "logo": "link to photo",
+            "email": "contact@cando.com",
+            "fname": "Sarah",
+            "lname": "Parker",
+            "jtitle": "President",
+            "website": "https://www.cando.com"
+            
+            
+        }
+
+    ]
+}

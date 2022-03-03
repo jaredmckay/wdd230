@@ -1,4 +1,4 @@
-const requestURL = 'https://byui-cit230.github.io/lessons/lesson-09/data/latter-day-prophets.json';
+const requestURL = 'https://jaredmckay.github.io/wdd230/chamber/data/data.json';
 
 
 fetch(requestURL)
@@ -7,8 +7,8 @@ fetch(requestURL)
   })
   .then(function (jsonObject) {
     console.table(jsonObject);  // temporary checking for valid response and data parsing
-    const prophets = jsonObject['prophets'];
-    prophets.forEach(displayProphets);
+    const directory = jsonObject['business'];
+    prophets.forEach(displayBuisness);
   });
 
   function displaySuffix(prophet) {
@@ -28,36 +28,33 @@ fetch(requestURL)
         break; 
     }
   }
-  function displayProphets(prophet, displaySuffix) {
+  function displayCard(directory) {
     // Create elements to add to the document
     let card = document.createElement('section');
-    let h2 = document.createElement('h2');
-    let birth = document.createElement('p');
-    let birthpl = document.createElement('p');
-    let order = document.createElement('p');
-    let portrait = document.createElement('img');
-    let suffix = displaySuffix 
+    let busname = document.createElement('h2');
+    let phone = document.createElement('p');
+    let website = document.createElement('p');
+    let moto = document.createElement('p');
+    let logo = document.createElement('img');
 
     // Change the textContent property of the h2 element to contain the prophet's full name
-    h2.textContent = `${prophet.name} ${prophet.lastname}`;
-    order.textContent = `The ${prophet.order} President of the Church`;
-    birth.textContent = `Date of Birth: ${prophet.birthdate}`;
-    birthpl.textContent = `Place of Birth: ${prophet.birthplace}`;
+    busname.textContent = `${business.name}`;
+    phone.textContent = `The ${business.phone} President of the Church`;
+    website.textContent = `Date of Birth: ${business.website}`;
+    moto.textContent = `Place of Birth: ${business.moto}`;
 
     // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values. (Fill in the blank with the appropriate variable).
-    portrait.setAttribute('src', prophet.imageurl);
-    portrait.setAttribute('alt', `Portait of ${prophet.name} ${prophet.lastname} the ${displaySuffix +1} President of the Church of Jesus Christ of Ladder Day Saints `); 
+    portrait.setAttribute('src', business.logo);
+    portrait.setAttribute('alt', `${business.name} Logo`); 
     portrait.setAttribute('loading', 'lazy');
 
     // Add/append the section(card) with the h2 element
-    card.appendChild(h2);
-    card.appendChild(order)
-    card.appendChild(birth);
-    card.appendChild(birthpl);
-    card.appendChild(portrait);
+    card.appendChild(busname);
+    card.appendChild(phone)
+    card.appendChild(website);
+    card.appendChild(moto);
+    card.appendChild(logo);
 
     // Add/append the existing HTML div with the cards class with the section(card)
     document.querySelector('div.cards').appendChild(card);
   }
-  
-  

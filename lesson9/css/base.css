@@ -1,0 +1,20 @@
+header {
+    text-align: center;
+}
+
+.cards {
+    text-align: center;
+}
+
+img {
+    box-shadow: 5px 8px #555;
+}
+
+@media only screen and (min-width: 50rem) {
+    main {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    
+    }
+    
+}
