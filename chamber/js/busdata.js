@@ -1,7 +1,7 @@
 const requestURL = 'https://jaredmckay.github.io/wdd230/chamber/data/data.json';
 const listBtn = document.querySelector('.listBtn');
 const cardBtn = document.querySelector('.cardBtn');
-const cards = document.querySelector('.cards');
+const cards = document.querySelector('div.cards');
 
 fetch(requestURL)
   .then(function (response) {
