@@ -380,16 +380,15 @@ form label.jotop input:required:valid {
     background-color: #1c61aa0e;
 }
 
-.listview-btn {
-    padding: 0.5em;
+.listBtn, .cardBtn{
+    padding: .5em;
+    margin: .3rem;
 }
 
-.listview-btn button {
-    padding: 0.2rem;
-    background-color: white;
-    border-radius: 8px;
-    margin: 1em;
-    border: none;
+.buttons {
+    text-align: center;
+    padding: 2rem;
+    
 }
 
 .listview section:nth-child(2n) {
