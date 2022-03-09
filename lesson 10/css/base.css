@@ -1,0 +1,28 @@
+.title {
+    text-align: center;
+    padding: 2rem;
+}
+
+.weather {
+    margin: auto;
+    text-align: center;
+    background-color: lightgrey;
+    border: solid 1px black;
+    max-width: 25rem;
+
+   
+}
+
+.card {
+    padding: 5rem;
+   
+}
+
+.ref {
+    font-size: small;
+    float: right;
+}
+
+footer {
+    text-align: center;
+}
