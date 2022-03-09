@@ -347,44 +347,44 @@ form label.jotop input:required:valid {
     text-align: center;
 }
 
-.list-view img,
-.card-view > section h2 {
+.listview img,
+.gridview > section h2 {
     display: none;
 }
 
-.card-view img {
+.gridview img {
     display: block;
     width: 60%;
     margin: auto;
 }
 
-.list-view > section h2 {
+.listview > section h2 {
     display: block;
 }
 
-.list-view section {
+.listview section {
     display: grid;
     grid-template-columns: 1fr;
     padding: 0.5em;
 }
 
-.card-view {
+.gridview {
     display: grid;
     grid-template-columns: 1fr;
 }
 
-.card-view section {
+.gridview section {
     padding: 0.5em;
     margin: 0.5em;
     border-radius: 8px;
     background-color: #1c61aa0e;
 }
 
-.list-view-btn {
+.listview-btn {
     padding: 0.5em;
 }
 
-.list-view-btn button {
+.listview-btn button {
     padding: 0.2rem;
     background-color: white;
     border-radius: 8px;
@@ -392,6 +392,6 @@ form label.jotop input:required:valid {
     border: none;
 }
 
-.list-view section:nth-child(2n) {
+.listview section:nth-child(2n) {
     background-color: #1c61aa0e;
 }

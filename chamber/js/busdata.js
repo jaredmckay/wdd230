@@ -1,7 +1,7 @@
 const requestURL = 'https://jaredmckay.github.io/wdd230/chamber/data/data.json';
 const listBtn = document.querySelector('.listBtn');
 const cardBtn = document.querySelector('.cardBtn');
-const cards = document.querySelector('div.cards');
+const display = document.querySelector('article');
 
 fetch(requestURL)
   .then(function (response) {
@@ -48,13 +48,14 @@ function displayCard(directory) {
 
 
 
-listBtn.addEventListener("click", () => {
-  cards.classList.replace("card-view", "list-view")
-  console.log("it is working")
+cardBtn.addEventListener("click", () => {
+  display.classList.add("gridview");
+  display.classList.remove("listview");
 });
 
-cardBtn.addEventListener("click", () => {
-  cards.classList.replace("list-view", "card-view")
+listBtn.addEventListener("click", () => {
+  display.classList.add("listview");
+  display.classList.remove("gridview");
   console.log("it is working")
 });
 
