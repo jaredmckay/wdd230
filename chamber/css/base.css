@@ -133,6 +133,14 @@ header, footer {
     
 }
 
+#ph6{
+    text-align: center;
+}
+
+.ref{
+    font-size: x-small;
+}
+
 #heroimg {
     max-width: 100%;
 }
