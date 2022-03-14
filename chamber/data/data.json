@@ -85,12 +85,12 @@
             
         },
         {
-            "name": "Todd Sporting Goods",
+            "name": "Todd's Sporting Goods",
             "moto": "For all your sporting needs",
             "membership": "Silver",
             "phone": "306-555-7950",
             "logo": "images/todd's_sporting.png",
-            "email": "contact@toddsportinggoods.com",
+            "email": "contact@toddssportinggoods.com",
             "fname": "Todd",
             "lname": "Sport",
             "jtitle": "Owner/Operator",
