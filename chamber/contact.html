@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="discription" content="Lakeland area business chamber of commerce">
+    <title>Lakeland Chamber of Commerce</title> 
+    <link rel="shortcut icon" href="favicon.ico"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="css/normalize.css" type="text/css"/>
+    <link rel="stylesheet" href="css/base.css" type="text/css"/>
+    <link rel="stylesheet" href="css/medium.css" type="text/css"/>
+    <link rel="stylesheet" href="css/large.css" type="text/css"/>
+    <script defer src="js/main.js"></script>
+    <script defer src="js/temp.js"></script>
+    <script defer src="js/popup.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logobox">
+            <a href="#"><img class="busimg" id="headlogo" src="images/rsz_lcc.jpg" alt="Lakeland Chamber of Commerce Logo"></a>
+        </div>
+        <div id="title">
+            <h1 id="ti1">Lakeland</h1>
+            <p id="ti2">Chamber of Commerce</p>
+        </div>
+        <div id="sociallink">
+            <a class="social" id="facebook" href="https://www.facebook.com/" target="_blank"><img src="images/facebooklogos.jpg" alt="Facebook Logo"></a>
+            <a class="social" id="linkedin" href="https://www.linkedin.com/" target="_blank"><img src="images/linkedinlogo.jpg" alt="Linkedin Logo"></a>
+        </div>
+        <aside></aside>   
+
+        <nav>
+            <button id="menuBtn">&#9776;</button>
+            <ul id="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="popup">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</div>
+    </header>
+
+    <main>
+        <form method="get" action="answer.html">
+            <fieldset>
+                <legend>Primary Contact</legend>
+                <label for="fname" class="jotop"> First Name* <input type="text" name="fname" id="fname" required></label>
+                <label for="lname" class="jotop"> Last Name* <input type="text" name="lname" id="lname" required></label>
+                <label for="phone" class="jotop"> Phone* <input type="tel" name="phone" placeholder="1235551234" id="phone" required></label>
+                <label for="email" class="jotop"> Email* <input type="email" name="email" id="email" required placeholder="person@email.com"></label>
+                <label class="jotop" for="buisname">Business Name<input type="text" id="buisname" name="buisname"></label>
+                <legend>Are you a member?</legend>
+                <label class="conrb" for="membership"><input type="radio" name="membership" id="membership" value="yes">Yes</label>
+                <label class="conrb" for="membership"><input type="radio" name="membership" id="membership" value="no">No</label>
+                <label class="conrb" for="membership"><input type="radio" name="membership" id="membership" value="unknown">I don't know</label>
+                <label for="msg" class="comsg">Message <textarea name="comsg" id="comsg" cols="40" rows="10"></textarea>
+            </fieldset>
+
+
+            <input class="cobtn" type="submit" value="Send Message">
+        </form>
+    </main>
+
+
+    <footer>
+        <img class ="busimg" id="footlogo" src="images/rsz_lcc.jpg" alt="LakeLand Chamber of Commerce Logo">
+        <div id="chamberfooter">
+            <h3>Lakeland Chamber of Commerce</h3>
+            <p id="address">45 15 St W Prince Albert, Saskatchewan S6V6J9</p>
+            <p>info@lakelandchamber.com</p>
+            <p>+1 (306) 555-9955</p>
+            
+        </div>
+        <div id="classfooter">
+            <div id="copy">
+                <p id="copyright">&copy; <p id="copyjava"></p>            
+            </div>
+
+            <div id="footcont">
+                <p id="footnote">WDD-230 Project | Jared McKay</p>
+                <p id="lastmod"></p>
+            </div>
+          
+        </div>
+
+    </footer>
+
+</body>
+</html>
