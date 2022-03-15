@@ -376,12 +376,13 @@ form label.jotop input:required:valid {
     padding: 0.5em;
 }
 
-.gridview {
+.gridview .cards{
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    text-align: center;
 }
 
-.gridview section {
+.gridview section  {
     padding: 0.5em;
     margin: 0.5em;
     border-radius: 8px;
