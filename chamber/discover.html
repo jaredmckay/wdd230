@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="discription" content="Lakeland area business chamber of commerce">
+    <meta name="discription" content="Lakeland area photos and discriptions">
     <title>Lakeland Chamber of Commerce</title> 
     <link rel="shortcut icon" href="favicon.ico"> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,13 +15,14 @@
     <link rel="stylesheet" href="css/medium.css" type="text/css"/>
     <link rel="stylesheet" href="css/large.css" type="text/css"/>
     <script defer src="js/main.js"></script>
-    <script defer src="js/temp.js"></script>
     <script defer src="js/popup.js"></script>
+    <script defer src="js/seemore.js"></script>
+    <script defer src="js/lastvisit.js"></script>
 </head>
-<body>
+<body> 
     <header>
         <div class="logobox">
-            <a href="#"><img class="busimg" id="headlogo" src="images/rsz_lcc.jpg" alt="Lakeland Chamber of Commerce Logo"></a>
+            <a href="index.html"><img class="busimg" id="headlogo" src="images/rsz_lcc.jpg" alt="Lakeland Chamber of Commerce Logo"></a>
         </div>
         <div id="title">
             <h1 id="ti1">Lakeland</h1>
@@ -34,7 +35,7 @@
         <aside></aside>   
 
         <nav>
-            <button id="menuBtn">&#9776;</button>
+            <button id="menuBtn">&#9776;Read More</button>
             <ul id="navigation">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="discover.html">Discover</a></li>
@@ -47,46 +48,127 @@
     </header>
 
     <main>
+        <div class="javaMsg">
+            <span class="msgDisp"></span>
+        </div>    
         <div class="disContent">
-            <picture class="dispic" id="arthauser">
-                <source media="(min-width: 50em)" srcset="images/arthauserL.jpg">
-                <source media="(min-width: 32em)" srcset="images/arthauseM.jpg">
-                <img class="dispics" src="images/arthauserS.jpg" alt="Art Hauser arena">
-            </picture>
-            <picture class="dispic" id="pulpmill">
-                <source media="(min-width: 50em)" srcset="images/pulpmillL.jpg">
-                <img class="dispics" src="images/pulpmillM.jpg" alt="Prince Albert Pulp Mill">
-            </picture>
-            <picture class="dispic" id="pariver">
-                <source media="(min-width: 50em)" srcset="images/pariverL.jpg">
-                <img class="dispics" src="images/pariverM.jpg" alt="North Saskatchewan River in Prince Albert">
-            </picture>
-            <picture class="dispic">
-                <source media="(min-width: 50em)" srcset="images/pasylineL.jpg">
-                <img class="dispics" src="images/pasylineM.jpg" alt="Prince Albert Skyline">
-            </picture>
-            <picture class="dispic" id="earawlinson">
-                <source media="(min-width: 50em)" srcset="images/earawlinsonL.jpg">
-                <img class="dispics" src="images/earawlinsonM.jpg" alt="E.A. Rawlinson Center">
-            </picture>
-            <picture class="dispic" id="candlelake">
-                <source media="(min-width: 50em)" srcset="images/candlelakeL.jpg">
-                <img class="dispics" src="images/candlelakeM.jpg" alt="Candle Lake Beach">
-            </picture>
-            <picture class="dispic" id="keyholecastle">
-                <source media="(min-width: 50em)" srcset="images/keyholecastleL.jpg">
-                <img class="dispics" src="images/keyholecastleM.jpg" alt="Key Hole Castle">
-            </picture>
-            <picture class="dispic" id="littlered">
-                <source media="(min-width: 50em)" srcset="images/littleredL.jpg">
-                <source media="(min-width: 32em)" srcset="images/littleredM.jpg">
-                <img class="dispics" src="images/littleredmS.jpg" alt="Little Red Park Sliding Hill Winter">
-            </picture>
-            <picture class="dispic" id="kinsmenwaterpark">
-                <source media="(min-width: 50em)" srcset="images/kinsmenwaterparkL.jpg">
-                <source media="(min-width: 32em)" srcset="images/kinsmenwaterparkM.jpg">
-                <img class="dispics" src="images/kinsmenwaterparkS.jpg" alt="Three outdoor water slides">
-            </picture>
+            <div class="disCard">
+                <picture class="dispic" id="arthauser">
+                    <source media="(min-width: 50em)" srcset="images/arthauserL.jpg">
+                    <source media="(min-width: 32em)" srcset="images/arthauseM.jpg">
+                    <img class="dispics" src="images/arthauserS.jpg" alt="Art Hauser arena">
+                </picture>    
+                <h2>Art Hauser Arena</h2>
+                <p>The Art Hauser arena is the home to the Prince Albert's W.H.L team the Raiders. It is a city run facility with upstairs venue room it
+                     can accomidate all sorts of fun. The arena included new concessions at the southeast corner of the building on both levels, new washrooms at the southeast <span id="dots1">...</span><span id="seemore1">corner of the building on both levels, new seats in the entire arena, renovated dressing rooms, a new centre-ice scoreboard with video boards on all 4 sides, an expanded Ches Leach Lounge,
+                     a new front lobby named for Prince Albert-born former NHL goalie Johnny Bower with concessions and team store, and new offices for both the WHL Raiders and the City of Prince Albert.</span>
+                </p>
+                <button onclick="seeMore1()" id="more1">Read More</button>
+            </div>
+            <div class="disCard">
+                <picture class="dispic" id="pulpmill">
+                    <source media="(min-width: 50em)" srcset="images/pulpmillL.jpg">
+                    <img class="dispics" src="images/pulpmillM.jpg" alt="Prince Albert Pulp Mill">
+                </picture>
+                <h2>Prince Albert Pulp Mill</h2>
+                <p> The Prince Albert Pulp Mill was for a long time the a large portion of Prince Albert industry economy. When it closed it caused a large hole in the P.A. economy, 
+                    but we built back.<span id="dots2">...</span><span id="seemore2"> Now with the pulp mill finally reopeneing we will see more growth in Prince Albert businesses.</span>
+                </p>
+                <button onclick="seeMore2()" id="more2">Read More</button>
+            </div>  
+            <div class="disCard">  
+                <picture class="dispic" id="pariver">
+                    <source media="(min-width: 50em)" srcset="images/pariverL.jpg">
+                    <img class="dispics" src="images/pariverM.jpg" alt="North Saskatchewan River in Prince Albert">
+                </picture>
+                <h2>North Saskatchewan River</h2>
+                <p>The North Saskatchewan River is a glacier-fed river that flows from the Canadian Rockies continental divide east to central Saskatchewan,<span id="dots3">...</span><span id="seemore3">
+                     where it joins with the South Saskatchewan River just east of Prince Albert to make up the Saskatchewan River. Its water flows eventually into the Hudson Bay.
+                </span>
+                </p>
+                <button onclick="seeMore3()" id="more3">Read More</button>
+            </div>
+            <div class="disCard">
+                <picture class="dispic">
+                    <source media="(min-width: 50em)" srcset="images/pasylineL.jpg">
+                    <img class="dispics" src="images/pasylineM.jpg" alt="Prince Albert Skyline">
+                </picture>
+                <h2>Prince Albert</h2>
+                <p>Prince Albert is the third-largest city in Saskatchewan, Canada. It is situated near the centre of the province on the banks of the North Saskatchewan River.
+                    <span id="dots4">...</span><span id="seemore4"> The city is known as the "Gateway to the North" because it is the last major centre along the route to the resources of northern Saskatchewan. Prince Albert National Park is located 51 km (32 mi) north of the city and contains a wealth of lakes, forest, and wildlife. 
+                    The city itself is located in a transition zone between the aspen parkland and boreal forest biomes.
+                </span>
+                </p>
+                <button onclick="seeMore4()" id="more4">Read More</button>
+            </div>
+            <div class="disCard">
+                <picture class="dispic" id="earawlinson">
+                    <source media="(min-width: 50em)" srcset="images/earawlinsonL.jpg">
+                    <img class="dispics" src="images/earawlinsonM.jpg" alt="E.A. Rawlinson Center">
+                </picture>
+                <h2>E.A. Rawlinson Center</h2>
+                <p>The E A Rawlinson Centre is the hub of arts and cultural activities in Prince Albert. 
+                    It houses both the Mann Art Gallery and <span id="dots5">...</span><span id="seemore5">the John G. and Olive Diefenbaker Theatre. 
+                    The facility is owned & operated by the City of Prince Albert. 
+                </span>
+                </p>
+                <button onclick="seeMore5()" id="more5">Read More</button>
+            </div>
+            <div class="disCard">
+                <picture class="dispic" id="candlelake">
+                    <source media="(min-width: 50em)" srcset="images/candlelakeL.jpg">
+                    <img class="dispics" src="images/candlelakeM.jpg" alt="Candle Lake Beach">
+                </picture>
+                <h2>Candle Lake</h2>
+                <p>There is a reason we are called the lakeland chamber of commerce. Candle lake is just one of the ten pristine lakes with in a one hour drive of Prince Albert.
+                    <span id="dots6">...</span><span id="seemore6">Each one brings in lots of summer travel and tourism dollars. 
+                </span>
+                </p>
+                <button onclick="seeMore6()" id="more6">Read More</button>
+            </div>
+            <div class="disCard">
+                <picture class="dispic" id="keyholecastle">
+                    <source media="(min-width: 50em)" srcset="images/keyholecastleL.jpg">
+                    <img class="dispics" src="images/keyholecastleM.jpg" alt="Key Hole Castle">
+                </picture>
+                <h2>Keyhole Castle</h2>
+                <p>The Keyhole Castle is located in the East Hill neighborhood of Prince Albert, Saskatchewan, Canada. It was built as the residence for Samuel McLeod, a former businessman, 
+                    mayor of Prince Albert and federal <span id="dots7">...</span><span id="seemore7"> politician. Architect Erich Wohann of Minneapolis designed the building, with construction ending in 1913. In 1975, 
+                    the Keyhole Castle was designated a National Historic Site of Canada. The building contains a ballroom on the top floor.
+                </span>
+                </p>
+                <button onclick="seeMore7()" id="more7">Read More</button>
+            </div>
+            <div class="disCard">
+                <picture class="dispic" id="littlered">
+                    <source media="(min-width: 50em)" srcset="images/littleredL.jpg">
+                    <source media="(min-width: 32em)" srcset="images/littleredM.jpg">
+                    <img class="dispics" src="images/littleredmS.jpg" alt="Little Red Park Sliding Hill Winter">
+                </picture>
+                <h2>Little Red River Park</h2>
+                <p>1200 acres of natural area is located north of the North Saskatchewan River. Little Red River Park is known for it's beauty and serenity, while still within the city limits.<span id="dots8">...</span><span id="seemore8"> 
+                    The park is open year round and provides trails for bikers, hikers and skiers, depending on the season. There are two areas, the Lower Plains on the banks of the Spruce River and 
+                    the Upper Plains. Both have great trails, flowers and an incredible ecosystem including Jack Pine forest and boreal plains.
+                </span>
+                </p>
+                <button onclick="seeMore8()" id="more8">Read More</button>
+
+            </div>
+            <div class="disCard">
+                <picture class="dispic" id="kinsmenwaterpark">
+                    <source media="(min-width: 50em)" srcset="images/kinsmenwaterparkL.jpg">
+                    <source media="(min-width: 32em)" srcset="images/kinsmenwaterparkM.jpg">
+                    <img class="dispics" src="images/kinsmenwaterparkS.jpg" alt="Three outdoor water slides">
+                </picture>
+                <h2>Kimsmen Water Park</h2>
+                <p>Cool off from the summer heat at the Kinsmen Water Park in Prince Albert! Enjoy a swim in the junior Olympic-sized pool or hang out in the leisure <span id="dots9">...</span><span id="seemore9"> pool, 
+                    which has a gradual slope and features a spray umbrella and spray tree. The tot pool is great for the toddlers to splash around in. Other amenties in the 
+                    waterpark include a whirlpool, two waterslides, a river ride, tot slides, play apparatus, canteen and a picnic/patio area. There are also two aquatic wheelchairs available to use for entry into the main pool if required. 
+                    Lane swimming and after hour rentals are available also.
+                </span>
+                </p>
+                <button onclick="seeMore9()" id="more9">Read More</button>
+            </div>
         </div>
 
     </main>

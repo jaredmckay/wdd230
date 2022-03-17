@@ -103,10 +103,7 @@
 
     /* discovery specific css */
 
-    .disContent {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-    }
+
 
     #arthauser {
         grid-column: span 3;

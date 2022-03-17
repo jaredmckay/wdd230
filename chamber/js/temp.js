@@ -4,7 +4,6 @@ const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=6113335&units
 fetch(apiURL)
   .then((response) => response.json())
   .then((jsObject) => {
-    console.log(jsObject);
     let curTemp = jsObject.main.temp;
     let curSpeed = jsObject.wind.speed;
     let windchill = "";

@@ -1,6 +1,5 @@
 function toggleMenu() {
     document.getElementById("navigation").classList.toggle("open");
-    console.log("It Worked");
 }
 
 const x = document.getElementById("menuBtn")

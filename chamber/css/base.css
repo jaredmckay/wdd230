@@ -5,15 +5,13 @@
 }
 
 body{
-    max-width: 800px;
+    max-width: 900px;
     margin: auto;
 }
 
 header {
     display: grid;
 }
-
-
 
 nav ul {
     display: none;
@@ -75,6 +73,11 @@ nav {
 
 #sociallink{
     grid-column: 3/4;
+    display: flex;
+}
+
+.social {
+    margin: .3rem;
 }
 
 .logobox {
@@ -84,6 +87,8 @@ nav {
 
 #menuBtn {
     background-color: #92828d;
+    padding: 5px;
+    
 
 }
 
@@ -116,7 +121,7 @@ aside {
     padding: .5em;
     margin: .75em;
     font-size: 1.25em;
-    margin: none;
+    color: black;
 }
 
 header, footer {
@@ -127,8 +132,8 @@ header, footer {
 
 .ph {
     min-width: 90%;
-    background-color: lightgrey;
-    border: 1px solid black;
+    background-color: #92828d;
+    border: 1px solid #1c448e;
     margin: 1em;
     
 }
@@ -141,12 +146,13 @@ header, footer {
     font-size: x-small;
 }
 
-#heroimg {
+.heroimg {
     max-width: 100%;
 }
 
 #popup {
-    position: absolute;
+    text-align: center;
+    grid-column: span 4;
     background-color: rgba(0,0,0,0.5);
     color: #fff;
 }
@@ -171,15 +177,20 @@ img {
 
 
 
-.highlight {
 
-    min-height: 4em;
-    border: 1px solid #555;
-    margin: .5em;
+.highlight > section:nth-child(3){
+    display: none;
 }
 
-#hl3 {
-    display: none;
+.highlightDis {
+    max-width: 80%;
+    border: 1px solid #555;
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+
+.highlightDis > img {
+    max-width: 50%;
 }
 
 .hlimg {
@@ -229,6 +240,8 @@ footer {
 
 .disContent {
     display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    
      
 }
 
@@ -236,19 +249,41 @@ footer {
     padding: 1em;
     max-width: 90%;
     border-radius: 100px; 
-    width: 150px; 
+    width: 200px; 
     margin: 0 3em .5em 0; 
     
 }
 
 .dispics:hover {
-    width: 90%;
-    margin: auto;
-    float: center;
-    margin: auto;
     border-radius: 0;
 
 }
+
+#seemore1, #seemore2, #seemore3, #seemore4, #seemore5, #seemore6, #seemore7, #seemore8, #seemore9 {
+    display: none;
+}
+
+.disCard {
+
+    margin: 0.5rem;
+    padding: 2rem;
+}
+
+.disCard > p {
+    padding: .5rem;
+}
+
+.javaMsg {
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.msgDisp {
+    background-color: #92828d;
+    border: 1px solid #1c448e;
+    padding: 0.5rem;
+}
+
 
 /* Join specific css */
 
@@ -281,9 +316,10 @@ form label.jotop, form label.jotop select {
     border:  solid 1px #1c448e;
     border-radius: 4px;
     padding: 0.75rem;
-    color: #555;
+    color: black;
     max-width: 20rem;
-    background-color: rgba(0,0,0,0.1);
+    background-color: #b6a5b0;
+    
 }
 
 form label.josbs {
@@ -323,13 +359,15 @@ form label.jotop input:required:valid {
     padding-top: 15rem;  
 }
 
-.thankcard {
+.thankcard, .disCard{
     background-color: #92828d;
     border: solid 1px black;
     max-width: 70%;
-    padding: 4rem;
-    color: #fff;
     box-shadow: 5px 8px #555;
+}
+
+.thankcard {
+    padding: 4rem;
 }
 .thanks {
     font-size: 2rem;
@@ -341,19 +379,6 @@ form label.jotop input:required:valid {
  }
 
 /* directory page CSS */
-
-
-.main-direct section h2{
-    font-size: 1em;
-}
-  
-.cards {
-    width: auto;
-}
-
-.directory {
-    text-align: center;
-}
 
 .listview img,
 .gridview > section h2 {
@@ -373,7 +398,7 @@ form label.jotop input:required:valid {
 .listview section {
     display: grid;
     grid-template-columns: 1fr;
-    padding: 0.5em;
+    padding: 0.7em;
 }
 
 .gridview .cards{
@@ -383,14 +408,14 @@ form label.jotop input:required:valid {
 }
 
 .gridview section  {
-    padding: 0.5em;
-    margin: 0.5em;
+    padding: 0.7em;
+    margin: 0.7em;
     border-radius: 8px;
-    background-color: #1c61aa0e;
+    background-color: #b6a5b0;
 }
 
 .listBtn, .cardBtn{
-    padding: .5em;
+    padding: .7em;
     margin: .3rem;
 }
 
@@ -401,5 +426,5 @@ form label.jotop input:required:valid {
 }
 
 .listview section:nth-child(2n) {
-    background-color: #1c61aa0e;
+    background-color: #b6a5b0;
 }
