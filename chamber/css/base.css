@@ -162,6 +162,7 @@ header, footer {
 
 .ref{
     font-size: x-small;
+    padding: 0.5rem;
 }
 
 
@@ -176,6 +177,7 @@ header, footer {
 .join-us {
     padding: .75em;
     max-width: 150px;
+    margin: 0.5rem;
 }
 
 #hero-button {
