@@ -304,7 +304,7 @@ form fieldset {
     border: 1px solid #555;
     border-radius: 10px;
     padding: 0.5rem;
-    max-width: 25rem;
+    max-width: 30rem;
 }
 
 
@@ -328,7 +328,7 @@ form label.jotop, form label.jotop select, .price {
     border-radius: 4px;
     padding: 0.75rem;
     color: black;
-    max-width: 20rem;
+    max-width: 22rem;
     background-color: #b6a5b0;
     
 }
@@ -358,11 +358,6 @@ form label.jotop input:required:valid {
     border-left: green solid 6px;
 }
 
-.jobtn {
-    margin: auto auto 1rem 2rem;
-
-}
-
 .membership {
     display: flex;
     flex-wrap: wrap;
@@ -370,6 +365,19 @@ form label.jotop input:required:valid {
     padding: 1.5rem;
 }
 
+.jobtn {
+    margin: auto auto 1rem 2rem;
+}
+
+.josbs {
+    font-size: large;
+}
+
+.def {
+    padding: 1rem;
+    font-size: medium;
+
+} 
 
 
 /* Thank you page specific css */
@@ -447,4 +455,24 @@ form label.jotop input:required:valid {
 
 .listview section:nth-child(2n) {
     background-color: #b6a5b0;
+}
+
+
+/* Contact specific page */
+
+.comsg{
+    padding: 1rem;
+}
+
+.comember {
+    display: flex;
+    flex-direction: column;
+}
+
+.cobtn {
+    margin: 1rem;
+}
+
+.conrb {
+    padding: 0.5rem;
 }

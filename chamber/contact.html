@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="discription" content="Lakeland Chamber of commerce contact page">
+    <meta name="description" content="Lakeland Chamber of commerce contact page">
     <title>Lakeland Chamber of Commerce</title> 
     <link rel="shortcut icon" href="favicon.ico"> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -48,21 +48,26 @@
     <main>
         <form method="get" action="answer.html">
             <fieldset>
-                <legend>Primary Contact</legend>
+                <legend>Contact Form</legend>
                 <label for="fname" class="jotop"> First Name* <input type="text" name="fname" id="fname" required></label>
                 <label for="lname" class="jotop"> Last Name* <input type="text" name="lname" id="lname" required></label>
-                <label for="phone" class="jotop"> Phone* <input type="tel" name="phone" placeholder="1235551234" id="phone" required></label>
+                <label for="phone" class="jotop"> Phone <input type="tel" name="phone" placeholder="1235551234" id="phone" ></label>
                 <label for="email" class="jotop"> Email* <input type="email" name="email" id="email" required placeholder="person@email.com"></label>
-                <label class="jotop" for="buisname">Business Name<input type="text" id="buisname" name="buisname"></label>
+                <label class="jotop" for="buisname">Business Name <input type="text" id="buisname" name="buisname"></label>
+            </fieldset>    
+            <fieldset class="comember">
                 <legend>Are you a member?</legend>
-                <label class="conrb" for="membership"><input type="radio" name="membership" id="membership" value="yes">Yes</label>
-                <label class="conrb" for="membership"><input type="radio" name="membership" id="membership" value="no">No</label>
-                <label class="conrb" for="membership"><input type="radio" name="membership" id="membership" value="unknown">I don't know</label>
-                <label for="msg" class="comsg">Message <textarea name="comsg" id="comsg" cols="40" rows="10"></textarea>
+                <label class="conrb" ><input type="radio" name="membership" id="membershipY" value="yes">Yes</label>
+                <label class="conrb" ><input type="radio" name="membership" id="membershipN" value="no">No</label>
+                <label class="conrb" ><input type="radio" name="membership" id="membershipUN" value="unknown">I don't know</label>
+
+            </fieldset>
+            <fieldset>
+                <legend>Message</legend>
+                <label class="comsg"><textarea name="comsg" id="comsg" cols="40" rows="10"></textarea>
+                <input class="cobtn" type="submit" value="Send Message">
             </fieldset>
 
-
-            <input class="cobtn" type="submit" value="Send Message">
         </form>
     </main>
 
