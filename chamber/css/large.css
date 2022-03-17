@@ -36,9 +36,13 @@
     #ph3 {
         grid-column: 4/5;
         grid-row: 1/4;
+        max-width: fit-content;
+        
+    }
+    
+    .highlight {
         display: flex;
         flex-direction: column;
-        
     }
 
     #popup{
@@ -54,20 +58,6 @@
     .highlight {
         margin: auto;
     }
-
-    #hl1{
-        min-height: 10em;
-    }
-    #hl2{
-        min-height: 10em;
-
-    }
-    #hl3 {
-        display: block;
-        margin: auto;
-        min-height: 10em;
-    }
-
 
     #ph4 {
         grid-column: 1/2;

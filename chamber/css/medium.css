@@ -27,8 +27,12 @@
     }
     #ph3 {
         grid-column: span 3;
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+
+    }
+
+    .highlight {
+        display: flex;
+        flex-direction: row;
     }
 
     #ph3txt {

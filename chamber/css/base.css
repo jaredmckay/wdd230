@@ -138,6 +138,10 @@ header, footer {
     
 }
 
+#ph5 {
+    padding: 0.5rem;
+}
+
 #ph6{
     text-align: center;
 }
@@ -176,8 +180,6 @@ img {
 }
 
 
-
-
 .highlight > section:nth-child(3){
     display: none;
 }
@@ -191,10 +193,7 @@ img {
 
 .highlightDis > img {
     max-width: 50%;
-}
-
-.hlimg {
-    max-width: 60%;
+    margin: .5rem;
 }
 
 footer {
