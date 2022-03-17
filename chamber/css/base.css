@@ -131,14 +131,28 @@ header, footer {
 
 
 .ph {
-    min-width: 90%;
     background-color: #92828d;
     border: 1px solid #1c448e;
     margin: 1em;
     
 }
 
-#ph5 {
+.hero-img > img {
+    border: solid 1px black;
+    box-shadow: 5px 8px #555;
+}
+
+.hero-img {
+    border: 1px single #1c448e;
+}
+
+#ph1 {
+    background-color: white;
+    border: none;
+}
+
+
+#ph5, #ph2, #ph4 {
     padding: 0.5rem;
 }
 
@@ -150,9 +164,7 @@ header, footer {
     font-size: x-small;
 }
 
-.heroimg {
-    max-width: 100%;
-}
+
 
 #popup {
     text-align: center;
@@ -309,7 +321,7 @@ form label.jotop, form div {
     font-size: 0.8rem;
 }
 
-form label.jotop, form label.jotop select {
+form label.jotop, form label.jotop select, .price {
     display: block;
     font-size: 1rem;
     border:  solid 1px #1c448e;
@@ -351,6 +363,15 @@ form label.jotop input:required:valid {
 
 }
 
+.membership {
+    display: flex;
+    flex-wrap: wrap;
+    color: black;
+    padding: 1.5rem;
+}
+
+
+
 /* Thank you page specific css */
 .thacontent {
     min-height: 32rem;
@@ -358,7 +379,7 @@ form label.jotop input:required:valid {
     padding-top: 15rem;  
 }
 
-.thankcard, .disCard{
+.thankcard, .disCard {
     background-color: #92828d;
     border: solid 1px black;
     max-width: 70%;
