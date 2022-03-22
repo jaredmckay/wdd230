@@ -5,6 +5,9 @@
         padding: 0.5rem 1rem;
     }
 
+    body{
+        max-width: 75%;
+    }
     nav button {
         display: none;
     }
