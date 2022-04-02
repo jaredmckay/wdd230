@@ -24,19 +24,19 @@
         <h1>Temple Inn & Suites</h1>
         <nav>
             <ul>
-                <li><a href="index.html"></a>Home</li>
-                <li><a href="temple.html"></a>Temple</li>
-                <li><a href="reservation.html"></a>Reservations</li>
-                <li><a href="services.html"></a>Services</li>
-                <li><a href="contact.html"></a>Contact Us</li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="temple.html">Temple</a></li>
+                <li><a href="reservation.html">Reservations</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
-        <div>
+        <div class="social">
             <a href="https://www.facebook.com/"><picture>
-                <img src="" alt="Facebook Logo">
+                <img src="images/facebooklogos.jpg" alt="Facebook Logo">
             </picture></a>
             <a href="https://www.instagram.com/"><picture>
-                <img src="" alt="Instagram Logo">
+                <img src="images/instagram.png" alt="Instagram Logo">
             </picture></a>
         </div>
         <div>
@@ -45,9 +45,11 @@
         </div>    
     </header>
     <main>
-        <div class="homecon">
+        <div class="homecon card">
             <picture class="homehero">
-                <img src="" alt="">
+                <source media="(min-width: 50em)" srcset="images/hotel-lobby.jpg">
+                <source media="(min-width: 32em)" srcset="images/hotel-lobby-m.jpg">
+                <img src="images/hotel-lobby-s.jpg" alt="" loading="lazy">
             </picture>
 
             <h2>Temple Inn & Suites</h2>
@@ -66,7 +68,7 @@
             </p>
             
 
-            <div>
+            <div class="card">
                 <p><strong>Current Weather</strong></p>
                 <span id="icon-src"></span><figure><img src="" alt="" id="weathericon" />  <figcaption></figcaption></figure>
                 <p>Currently: <span id="current-temp"></span>&#176;F</p>
@@ -77,38 +79,48 @@
             <div>
                 <p>Book your stay now!</p>
             </div>
-            <div>
+            <div class="card">
                 <H2>The Hotel</H2>
                 <picture>
-                    <img src="" alt="">
+                    <source media="(min-width: 50em)" srcset="images/images/hotel-exterior-pool.jpg">
+                    <source media="(min-width: 32em)" srcset="images/hotel-exterior-pool-m.jpg">
+                    <img src="images/hotel-exterior-pool-s.jpg" alt="" loading="lazy">
                 </picture>
             </div>
 
-            <div>
+            <div class="card">
                 <h2>The Temple</h2>
                 <picture>
-                    <img src="" alt="">
+                    <source media="(min-width: 50em)" srcset="images/regina-temple-l.jpg">
+                    <source media="(min-width: 32em)" srcset="images/regina-temple-m.jpg">
+                    <img src="images/regina-temple-s.jpg" alt="" loading="lazy">
                 </picture>
             </div>
             
-            <div>
+            <div class="card">
                 <h2>The Pool</h2>
                 <picture>
-                    <img src="" alt="">
+                    <source media="(min-width: 50em)" srcset="images/outdor-pool.jpg">
+                    <source media="(min-width: 32em)" srcset="images/outdor-pool-m.jpg">
+                    <img src="images/outdor-pool-s.jpg" alt="" loading="lazy">
                 </picture>
             </div>  
 
-            <div>
+            <div class="card">
                 <h2>Weddings</h2>
                 <picture>
-                    <img src="" alt="">
+                    <source media="(min-width: 50em)" srcset="images/wedding-venue.jpg">
+                    <source media="(min-width: 32em)" srcset="images/wedding-venue-m.jpg">
+                    <img src="images/wedding-venue-s.jpg" alt="" loading="lazy">
                 </picture>
             </div>
 
-            <div>
+            <div class="card">
                 <h2>Resturant</h2>
                 <picture>
-                    <img src="" alt="">
+                    <source media="(min-width: 50em)" srcset="images/hotel-buffet.jpg">
+                    <source media="(min-width: 32em)" srcset="images/hotel-buffet-m.jpg">
+                    <img src="images/hotel-buffet-s.jpg" alt="" loading="lazy">
                 </picture>
             </div>
         </div>
@@ -127,18 +139,14 @@
             </picture>
             <a href=""></a>
         </div>
-        <div>
+        <div class="inline">
             <!-- contact number -->
-            <picture>
-                <img src="" alt="">
-            </picture>
+            <p>&#128222;</p>
             <p>(306) 555-9916</p>
         </div>
-        <div>
+        <div class="inline">
             <!-- email -->
-            <picture>
-                <img src="" alt="">
-            </picture>
+            <p>&#x2709;</p>
             <p>Info@templeinnandsuites.com</p>
         </div>
         <div>
