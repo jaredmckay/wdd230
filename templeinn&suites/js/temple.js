@@ -30,11 +30,11 @@ function displayCard(temples) {
   templeName.innerHTML = `${temples.location}`;
   templeAddress.innerHTML = `${temples.address}`;
   templePhone.innerHTML = `${temples.phone}`;
-  templeService.innerHTML = `${temples.services}`;
-  templeOS.innerHTML = `${temples.ordinaceSchedule}`;
-  templeSS.innerHTML = `${temples.sessionSchedule}`;
+  templeService.innerHTML = `Services available ${temples.services}`;
+  templeOS.innerHTML = `Ordinaces schedule ${temples.ordinaceSchedule}`;
+  templeSS.innerHTML = `Session Schedule ${temples.sessionSchedule}`;
   templeHistory.innerHTML = `${temples.history}`;
-  templeClosure.innerHTML = `${temples.website}`;
+  templeClosure.innerHTML = `Closed the following days ${temples.templeClosure}`;
 
    // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values. (Fill in the blank with the appropriate variable).
   card.className = 'card';
