@@ -1,23 +1,28 @@
 
-const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=6119109&units=imperial&APPID=6a845f71ff0257569a77605dbb5fb42e";
+const apiURL = "https://api.openweathermap.org/data/2.5/onecall?lat=50.4452&lon=-104.6189&units=metric&exclude=hourly,minutely&appid=6a845f71ff0257569a77605dbb5fb42e";
 
 fetch(apiURL)
   .then((response) => response.json())
   .then((jsObject) => {
-    let curTemp = jsObject.main.temp;
-    let curSpeed = jsObject.wind.speed;
-    let windchill = "";
-    let alertType = jsObject.alerts.event
-    let alertDes = jsObject.alerts.description
+    let curTemp = jsObject.current.temp;
+    let curSpeed = jsObject.current.wind_speed;
+    let feelLike = jsObject.current.feels_like;
+    let alertType = jsObject.alerts.event;
+    let alertDes = jsObject.alerts.description;
+    let forecastTemp = jsObject.daily.temp.day;
+    let forecastDes = jsObject.daily.weather.main;
 
-    document.querySelector('#current-temp').textContent = Math.round(curTemp);
-    document.querySelector('#current-speed').textContent = Math.round(curSpeed);
+
     document.querySelector('#alertType').innerHTML = alertType;
     document.querySelector('#alertDes').innerHTML = alertDes;
+    document.querySelector('#current-temp').textContent = Math.round(curTemp);
+    document.querySelector('#current-speed').textContent = Math.round(curSpeed);
+    document.querySelector('#feel-like').textContent = Math.round(feelLike);
+    document.querySelector('#forecast-temp').textContent = Math.round(forecastTemp);
+    document.querySelector('#forecast-des').textContent = (forecastDes);
+
     const iconsrc = `https://openweathermap.org/img/w/${jsObject.weather[0].icon}.png`;
-    const desc = jsObject.weather[0].description;
-    
-  
+    const desc = jsObject.current.weather[0].description;
     
 
 
@@ -42,3 +47,7 @@ fetch(apiURL)
     return windChill;
   }
   });
+//     let alertType = jsObject.alerts.event
+// let alertDes = jsObject.alerts.description
+//     document.querySelector('#alertType').innerHTML = alertType;
+// document.querySelector('#alertDes').innerHTML = alertDes;
