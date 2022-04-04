@@ -3,11 +3,10 @@
         {
             "location": "Regina, SK",
             "address": "111 Wascana Gate N Regina SK S4V 2J6",
-            "history": "Announced 3 August 1998, Groundbreaking 14 November 1998, Dedicated 14 November 1999",
+            "history": "Announced 3 August 1998 \nGroundbreaking 14 November 1998 \nDedicated 14 November 1999",
             "phone": "(1) 306-545-8194",
             "picture": "images/temple-regina.jpg",
-            "email": "contact@birdconstruction.com",
-            "services": "No clothing rental available, No cafeteria available, No patron housing available, Distribution center nearby",
+            "services": "No clothing rental available \nNo cafeteria available \nNo patron housing available\nNo distribution center nearby",
             "ordinaceSchedule": "By appointment only during Covid",
             "sessionSchedule": "By appointment only during Covid",
             "templeClosure": "Saturday, 2 April 2022, Monday, 23 May 2022 - Monday, 6 June 2022, Saturday, 1 October 2022, Monday, 24 October 2022 - Monday, 7 November 2022, Saturday, 24 December 2022 - Sunday, 25 December 2022, Saturday, 31 December 2022"
@@ -17,11 +16,10 @@
         {
             "location": "Edmonton, AB",
             "address": "14335 53rd Ave NW Edmonton AB T6H 5G6 Canada,",
-            "history": "Announced 11 August 1998, Groundbreaking 27 February 1999, Dedicated 11 December 1999",
+            "history": "Announced 11 August 1998 \nGroundbreaking 27 February 1999 \nDedicated 11 December 1999",
             "phone": "(1) 780-434-7436",
             "picture": "images/temple-edmonton.jpg",
-            "email": "contact@birdconstruction.com",
-            "services": "No clothing rental available, No cafeteria available, No patron housing available, Distribution center nearby",
+            "services": "No clothing rental available \nNo cafeteria available \nNo patron housing available\nNo distribution center nearby",
             "ordinaceSchedule": "By appointment only during Covid",
             "sessionSchedule": "By appointment only during Covid",
             "templeClosure": "Saturday, 2 April 2022, Friday, 1 July 2022, Monday, 18 July 2022 - Monday, 26 September 2022, Saturday, 1 October 2022, Saturday, 24 December 2022, Saturday, 31 December 2022"
@@ -31,11 +29,10 @@
         {
             "location": "Calgary, AB",
             "address": "9802 Rocky Ridge Rd NW Calgary AB T3G 5J7 Canada",
-            "history": "Announced 4 October 2008, Groundbreaking 15 May 2010, Dedicated 28 October 2012",
+            "history": "Announced 4 October 2008 \nGroundbreaking 15 May 2010 \nDedicated 28 October 2012",
             "phone": "(1) 403-241-4250",
             "picture": "images/temple-calgary.jpg",
-            "email": "contact@birdconstruction.com",
-            "services": "No clothing rental available, No cafeteria available, No patron housing available, Distribution center nearby",
+            "services": "No clothing rental available \nNo cafeteria available \nNo patron housing available\nNo distribution center nearby",
             "ordinaceSchedule": "By appointment only during Covid",
             "sessionSchedule": "By appointment only during Covid",
             "templeClosure": "Saturday, 2 April 2022, Friday, 1 July 2022, Monday, 5 September 2022 - Monday, 19 September 2022, Saturday, 1 October 2022, Saturday, 24 December 2022, Saturday, 31 December 2022"
@@ -45,11 +42,10 @@
         {
             "location": "Cardston, AB",
             "address": "348 3rd St W Cardston AB T0K 0K0 Canada",
-            "history": "Announced 27 June 1913, Groundbreaking 27 July 1913, Dedicated 26 August 1923,Rededicated 2 July 1962,Rededicated 22 June 1991",
+            "history": "Announced 27 June 1913 \nGroundbreaking 27 July 1913 \nDedicated 26 August 1923 \nRededicated 2 July 1962 \nRededicated 22 June 1991",
             "phone": "(1) 403-653-3552",
             "picture": "images/temple-cardston.jpg",
-            "email": "contact@birdconstruction.com",
-            "services": "Clothing rental available, No cafeteria available, No patron housing available, Distribution center nearby",
+            "services": "Clothing rental available \nNo cafeteria available\nNo patron housing available\nDistribution center nearby",
             "ordinaceSchedule": "By appointment only during Covid",
             "sessionSchedule": "By appointment only during Covid",
             "templeClosure": "Saturday, 2 April 2022, Friday, 1 July 2022, Monday, 19 September 2022 - Monday, 3 October 2022, Friday, 11 November 2022, Saturday, 24 December 2022 - Tuesday, 27 December 2022, Saturday, 31 December 2022"

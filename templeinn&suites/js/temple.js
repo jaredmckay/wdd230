@@ -9,7 +9,7 @@ fetch(requestURL)
   .then(function (jsonObject) {
     // console.table(jsonObject);  // temporary checking for valid response and data parsing
     
-    const temples = jsonObject['temple'];
+    const temples = jsonObject['temples'];
     temples.forEach(displayCard);
   });
 
@@ -35,7 +35,7 @@ function displayCard(temples) {
   templeSS.innerHTML = `${temples.sessionSchedule}`;
   templeHistory.innerHTML = `${temples.history}`;
   templeClosure.innerHTML = `${temples.website}`;
-  templeEmail.innerHTML = `${temples.email}`;
+
    // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values. (Fill in the blank with the appropriate variable).
   card.className = 'card';
   logo.className = 'logoImg';
@@ -54,7 +54,7 @@ function displayCard(temples) {
   card.appendChild(templeOS);
   card.appendChild(templeSS);
   card.appendChild(templeHistory);
-  card.appendChild(templeEmail);
+  
   card.appendChild(templeClosure);
   
     // Add/append the existing HTML div with the cards class with the section(card)
