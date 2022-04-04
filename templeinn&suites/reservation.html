@@ -45,7 +45,7 @@
         <div class="jocontent">
             <form method="get" action="thankyou.html">
                 <fieldset>
-                    <legend>Primary Contact</legend>
+                    <legend>Contact Info</legend>
                     <label for="fname" class="jotop"> First Name* <input type="text" name="fname" id="fname" required></label>
                     <label for="lname" class="jotop"> Last Name* <input type="text" name="lname" id="lname" required></label>
                     <label for="phone" class="jotop"> Phone* <input type="tel" name="phone" placeholder="1235551234" id="phone" required></label>
@@ -53,49 +53,47 @@
                 </fieldset>
 
                 <fieldset>
-                    <legend>Membership Info</legend>
-                    <label class="jotop" for="jname">Job Title <input type="text" id="jname" name="jname"></label>
-                    <label class="jotop" for="buisname">Business Name <input type="text" id="buisname" name="buisname" required></label>
-                    <label class="jotop" for="buisdisc">Business Discription <input type="text" id="buisdisc"></label>
-                    <label class="jotop" for="url">Business Website <input type="url" name="url" id="url" placeholder="https://"></label>
+                    <legend>Dates</legend>
+                    <label class="jotop" for="checkin">Check in date <input type="date" id="checkin" name="checkin"></label>
+                    <label class="jotop" for="checkout">Check out date <input type="date" id="checkout" name="checkout" required></label>
+                    <label class="jotop" for="guest">number of guests <input type="number" id="guest"></label>
                 </fieldset> 
 
                 <fieldset>
-                    <legend>Membership Choice</legend>
+                    <legend>room</legend>
                     <div class="membership">
-                        <label class="josbs" ><input type="radio" name="membership" value="non-profit">Non-profit</label>
-                        <p class="price">Free</p>
-                        <p class="def">With no cost to you this is a great way to still be apart of the chamber.
-                            You will be added to the directory and will be offered an invite to all 
-                            of the chamber hosted events. Only available to Non-Profit organizations.
-                        </p>
-                    </div>
-                    <div class="membership">
-                        <label class="josbs" ><input type="radio" name="membership" value="bronze">Bronze</label>
-                        <p class="price">$500</p>
-                        <p class="def"> An affordable option to join the chamber for smaller businesses who are 
-                            wanting to be apart of the chamber, but are not sure if they want the 
-                            advantages of the higher packages. Will be offered to attend all events 
-                            hosted by the chamber.
+                        <label class="josbs" ><input type="radio" name="membership" value="standard">Standard</label>
+                        <p class="price">$175</p>
+                        <p class="def"> Standard room with either one King bed or two doubles. Cozy up in the triple-sheeted, 
+                            pillow-topped bed and snuggle under a comfy white duvet. Slip into a bathrobe and head over to indulge in 
+                            the soothing mineral spa pool, then come back to lounge in the armchair, put your feet up on the ottoman. 
+                            Free Wi-Fi will keep you connected and let you share special moments with family and friends.
                         </p>
                     </div>
                     <div class="membership">    
-                        <label class="josbs" ><input type="radio" name="membership" value="Silver">Silver</label>
-                        <p class="price">$2500</p>
-                        <p class="def">Gives you a higher priority to event over bronze or non-profit members. 
-                            You will also have your business information displayed at events hosted by the chamber.
+                        <label class="josbs" ><input type="radio" name="membership" value="superior">Superior</label>
+                        <p class="price">$250</p>
+                        <p class="def">Why get up just yet? Linger a little while longer in totally affordable luxury 
+                            in the triple-sheeted, pillow-topped bed under a comfy white duvet in your king-bed room. 
+                            If work really is calling, stay connected and on schedule with free Wi-Fi. Take a moment 
+                            to enjoy the view from your balcony. 
                         </p>
                     </div>
                     <div class="membership">
-                        <label class="josbs" ><input type="radio" name="membership" value="Gold">Gold</label>
-                        <p class="price">$5000</p>
-                        <p class="def">Give all the benefits of the previous memberships. In addition your business
-                            information will rotate through one of our three highlight spots on our home page.
-                            You will also get priority entry to all events hosted by the chamber. 
+                        <label class="josbs" ><input type="radio" name="membership" value="suite">Suite</label>
+                        <p class="price">$300</p>
+                        <p class="def">The perfect space to recharge and focus, the business suite offers a large 
+                            living area with extra seating and a comfortable work desk for those last-minute emails, 
+                            while a separate bedroom with king-sized bed means you’ll enjoy the ultimate in comfort 
+                            when it’s time to shut down for the night. In the early morning hours, linger a bit in the 
+                            triple-sheeted, pillow-topped bed, snuggled under the comfy white duvet. When duty calls, 
+                            however, you’ll stay connected and on schedule with free WiFi – but do remember to take in 
+                            the gorgeous view from your balcony. You can either order in from our resturant or cook yourself 
+                            with our fully equiped kitchen.
                         </p>
                     </div>
                 </fieldset>
-                <input class="jobtn" type="submit" value="Join The Chamber">
+                <input class="jobtn" type="submit" value="Book Your Stay!">
             </form>
         </div>
     </main>

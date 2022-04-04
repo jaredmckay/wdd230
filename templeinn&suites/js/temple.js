@@ -42,8 +42,7 @@ function displayCard(temples) {
   logo.setAttribute('src', temples.picture);
   logo.setAttribute('alt', `${temples.location} Temple`); 
   logo.setAttribute('loading', 'lazy');
-//   website.setAttribute('href', temples.website);
-//   website.setAttribute('target', '_blank');
+
 
     // Add/append the section(card) with the h2 element
   card.appendChild(templeName);
@@ -54,7 +53,6 @@ function displayCard(temples) {
   card.appendChild(templeOS);
   card.appendChild(templeSS);
   card.appendChild(templeHistory);
-  
   card.appendChild(templeClosure);
   
     // Add/append the existing HTML div with the cards class with the section(card)
