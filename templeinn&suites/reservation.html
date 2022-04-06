@@ -52,46 +52,48 @@
     </header>
     <main>
         <div class="jocontent">
-            <form method="get" action="thankyou.html">
+            <form class="card" method="get" action="thankyou.html">
                 <fieldset>
                     <legend>Contact Info</legend>
-                    <label for="fname" class="jotop"> First Name* <input type="text" name="fname" id="fname" required></label>
-                    <label for="lname" class="jotop"> Last Name* <input type="text" name="lname" id="lname" required></label>
-                    <label for="phone" class="jotop"> Phone* <input type="tel" name="phone" placeholder="1235551234" id="phone" required></label>
-                    <label for="email" class="jotop"> Email* <input type="email" name="email" id="email" required placeholder="person@email.com"></label>
+                    <label for="fname" class="inline slogo"> First Name* <input class="slogo" type="text" name="fname" id="fname" required></label>
+                    <label for="lname" class="inline slogo"> Last Name* <input class="slogo" type="text" name="lname" id="lname" required></label>
+                    <label for="phone" class="inline slogo"> Phone* <input class="slogo" type="tel" name="phone" placeholder="1235551234" id="phone" required></label>
+                    <label for="email" class="inline slogo"> Email* <input class="slogo" type="email" name="email" id="email" required placeholder="person@email.com"></label>
                 </fieldset>
 
                 <fieldset>
                     <legend>Dates</legend>
-                    <label class="jotop" for="checkin">Check in date <input type="date" id="checkin" name="checkin"></label>
-                    <label class="jotop" for="checkout">Check out date <input type="date" id="checkout" name="checkout" required></label>
-                    <label class="jotop" for="guest">number of guests <input type="number" id="guest"></label>
+                    <label class="inline slogo" for="checkin">Check-in date <input class="slogo" type="date" id="checkin" name="checkin"></label>
+                    <label class="inline slogo" for="checkout">Check-out date <input class="slogo" type="date" id="checkout" name="checkout" required></label>
+                    <label class="inline slogo" for="guest">Number of guests <input class="slogo" type="number" id="guest"></label>
                 </fieldset> 
 
                 <fieldset>
-                    <legend>room</legend>
-                    <div class="membership">
-                        <label class="josbs" ><input type="radio" name="membership" value="standard">Standard</label>
-                        <p class="price">$175</p>
-                        <p class="def"> Standard room with either one King bed or two doubles. Cozy up in the triple-sheeted, 
+                    <legend>Rooms</legend>
+                    <div class="card">
+                        <label ><input class="slogo" type="radio" name="membership" value="standard">Standard</label>
+                        <p class="slogo">$175</p>
+                        <p class="slogo"> Standard room with either one King bed or two doubles. Cozy up in the triple-sheeted, 
                             pillow-topped bed and snuggle under a comfy white duvet. Slip into a bathrobe and head over to indulge in 
                             the soothing mineral spa pool, then come back to lounge in the armchair, put your feet up on the ottoman. 
                             Free Wi-Fi will keep you connected and let you share special moments with family and friends.
                         </p>
+                        <img class="imgshaw slogo max" src="images/superior-room-m.jpg" alt="standard room two double beds">
                     </div>
-                    <div class="membership">    
-                        <label class="josbs" ><input type="radio" name="membership" value="superior">Superior</label>
-                        <p class="price">$250</p>
-                        <p class="def">Why get up just yet? Linger a little while longer in totally affordable luxury 
+                    <div class="card">    
+                        <label ><input class="slogo" type="radio" name="membership" value="superior">Superior</label>
+                        <p class="slogo">$250 / Night</p>
+                        <p class="slogo">Why get up just yet? Linger a little while longer in totally affordable luxury 
                             in the triple-sheeted, pillow-topped bed under a comfy white duvet in your king-bed room. 
                             If work really is calling, stay connected and on schedule with free Wi-Fi. Take a moment 
                             to enjoy the view from your balcony. 
                         </p>
+                        <img class="imgshaw slogo max" src="images/standard-one-king-balcony-m.jpg" alt="superior room king bed with balcony">
                     </div>
-                    <div class="membership">
-                        <label class="josbs" ><input type="radio" name="membership" value="suite">Suite</label>
-                        <p class="price">$300</p>
-                        <p class="def">The perfect space to recharge and focus, the business suite offers a large 
+                    <div class="card">
+                        <label ><input class="slogo" type="radio" name="membership" value="suite">Suite</label>
+                        <p class="slogo">$300 / Night</p>
+                        <p class="slogo">The perfect space to recharge and focus, the business suite offers a large 
                             living area with extra seating and a comfortable work desk for those last-minute emails, 
                             while a separate bedroom with king-sized bed means you’ll enjoy the ultimate in comfort 
                             when it’s time to shut down for the night. In the early morning hours, linger a bit in the 
@@ -100,9 +102,10 @@
                             the gorgeous view from your balcony. You can either order in from our resturant or cook yourself 
                             with our fully equiped kitchen.
                         </p>
+                        <img class="imgshaw slogo max" src="images/hotel-suite-m.jpg" alt="Suite with living room">
                     </div>
                 </fieldset>
-                <input class="jobtns" type="submit" value="Book Your Stay!">
+                <input class="inline slogo" type="submit" value="Book Your Stay!">
             </form>
         </div>
     </main>

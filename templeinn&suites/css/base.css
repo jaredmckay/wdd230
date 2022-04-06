@@ -33,6 +33,11 @@ nav ul.open {
     z-index: 1;
 }
 
+.repeat {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
 .navBtn {
     margin: .2em;
     background-color: transparent;
@@ -51,9 +56,7 @@ nav ul li a {
     z-index: 1;
 }
 
-ul li:first-child {
-    display: block;
-}
+
 
 
 nav ul li:active {
@@ -79,7 +82,7 @@ nav ul li a:hover {
     grid-row: 1/2;
     display: flex;
 }
-.slogo{
+.slogo, .logo{
     margin: 0.5rem;
 }
 
@@ -89,21 +92,24 @@ nav ul li a:hover {
     
 }
 
+
 .card {
     display: block;
     font-size: 1rem;
     border:  solid 1px #1c448e;
-    
     border-radius: 4px;
     padding: 0.75rem;
     color: black;
-    max-width: 22rem;
+
     margin-top: 2rem;
     background-color: yellow;
 }
 
-.card > picture > img, .card > img {
+.max {
     max-width: 95%;
+}
+
+.imgshaw {
     box-shadow: 5px 8px #555;
 }
 
@@ -127,3 +133,6 @@ button, .jobtn {
     margin: 0.5rem;
 }
 
+.text {
+    text-align: center;
+}
