@@ -24,7 +24,6 @@ function displayCard(temples) {
   let templeAddress = document.createElement('p');
   let templeClosure = document.createElement('p');
   let templeOS = document.createElement('p');
-  let pic = document.createElement('picture')
   let logo = document.createElement('img');
 
    // Change the innerHTML property of the h2 element to contain the buisness full name
