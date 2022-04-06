@@ -15,14 +15,20 @@
     <link rel="stylesheet" href="css/medium.css" type="text/css"/>
     <link rel="stylesheet" href="css/large.css" type="text/css"/>
     <script defer src="js/temp.js"></script>
-    <script defer src=""></script>
+    <script defer src="js/main.js"></script>
     <script defer src=""></script>
     <script defer src=""></script>
 </head>
 <body>
     <header>
-        <h1>Temple Inn & Suites</h1>
-        <nav>
+        <h1 id="title">Temple Inn & Suites</h1>
+        <a  class="logo" href="index.html"><picture>
+            <img  src="images/temple-logo.png" alt="temple Inn and Suites logo">
+        </picture></a>
+        
+
+        <nav id="nav">
+            <button id="navBtn">&#9776;</button>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="temple.html">Temple</a></li>
@@ -33,15 +39,15 @@
         </nav>
         <div class="social">
             <a href="https://www.facebook.com/"><picture>
-                <img src="images/facebooklogos.jpg" alt="Facebook Logo">
+                <img class="slogo" src="images/facebooklogos.jpg" alt="Facebook Logo">
             </picture></a>
             <a href="https://www.instagram.com/"><picture>
-                <img src="images/instagram.png" alt="Instagram Logo">
+                <img class="slogo" src="images/instagram.png" alt="Instagram Logo">
             </picture></a>
         </div>
         <div>
-            <span id="alertType"></span>
-            <span id="alertDes"></span>
+            <!-- <span id="alertType"></span>
+            <span id="alertDes"></span> -->
         </div>    
     </header>
     <main>
@@ -56,17 +62,7 @@
             <p>Located half a mile away from the Regina SK, Latter Day Saints Temple. 
                 Making it the closes hotel to the temple.
             </p>
-        
-            <h2>The Temple</h2>
-            <p>The Regina SK, temple was announced Auguest 3 1998, with ground breaking
-                November 14 1998, and finally one year later on November 14 1998 the first temple in Saskatchewan was dedicated. 
-            </p>
-            
-            <h2>Daycare</h2>
-            <p>Bring the small kids with you, and leave them at our short term day care while you attend 
-                a temple session.
-            </p>
-            
+                   
 
             <div class="card">
                 <p><strong>Current Weather</strong></p>
@@ -83,9 +79,9 @@
             </div>
 
 
-            <div>
-                <p>Book your stay now!</p>
-            </div>
+            <form action="reservation.html">
+                <button>Book Your Stay Now!</button>
+            </form>
             <div class="card">
                 <H2>The Hotel</H2>
                 <picture>
@@ -135,13 +131,13 @@
     </main>
     <footer>
         <!-- logo -->
-        <picture>
-            <img src="" alt="">
-        </picture>
+        <a href="index.html"><picture>
+            <img src="images/temple-logo.png" alt="Temple Inn and Suites logo">
+        </picture></a>
 
-        <div>
+        <div class="map">
             <!-- map link -->
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.405019701323!2d-77.09772048464716!3d38.98325177955754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b8f21f1%3A0x9a0b3cde14da0a60!2s4800%20Montgomery%20Ln%20%23300%2C%20Bethesda%2C%20MD%2020814%2C%20USA!5e0!3m2!1sen!2sca!4v1649023681584!5m2!1sen!2sca" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.405019701323!2d-77.09772048464716!3d38.98325177955754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b8f21f1%3A0x9a0b3cde14da0a60!2s4800%20Montgomery%20Ln%20%23300%2C%20Bethesda%2C%20MD%2020814%2C%20USA!5e0!3m2!1sen!2sca!4v1649023681584!5m2!1sen!2sca" width="200" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
         <div class="inline">
             <!-- contact number -->
@@ -153,7 +149,7 @@
             <p>&#x2709;</p>
             <p>Info@templeinnandsuites.com</p>
         </div>
-        <div>
+        <div class="wdd">
             <p>WDD-230    |    Jared McKay    </p>
             <p></p>
         </div>

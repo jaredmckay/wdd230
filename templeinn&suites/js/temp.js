@@ -7,10 +7,10 @@ fetch(apiURL)
     let curTemp = jsObject.current.temp;
     let curSpeed = jsObject.current.wind_speed;
     let feelLike = jsObject.current.feels_like;
-    let alertType = jsObject.alerts.event;
-    let alertDes = jsObject.alerts.description;
-    let forecastTemp = jsObject.daily.temp.day;
-    let forecastDes = jsObject.daily.weather.main;
+    // let alertType = jsObject.alerts.event;
+    // let alertDes = jsObject.alerts.description;
+    // let forecastTemp = jsObject.daily.temp.day;
+    // let forecastDes = jsObject.daily.weather.main;
 
 
     document.querySelector('#alertType').innerHTML = alertType;
@@ -33,21 +33,17 @@ fetch(apiURL)
     document.querySelector('figcaption').textContent = desc;
   
 
-  if (curTemp <= 50 && curSpeed > 3) {
-    windchill = windChill(curTemp, curSpeed);
-    windchill = `${windchill}&#176;F`;
-  } else {
-    windchill = "N/A";
-  }
+  // if (curTemp <= 50 && curSpeed > 3) {
+  //   windchill = windChill(curTemp, curSpeed);
+  //   windchill = `${windchill}&#176;F`;
+  // } else {
+  //   windchill = "N/A";
+  // }
   
-  document.querySelector("#windchill").innerHTML = windchill;
+  // document.querySelector("#windchill").innerHTML = windchill;
 
-  function windChill(curTemp, curSpeed) {
-    var windChill = (35.74 + 0.6215 * curTemp - 35.75 * Math.pow(curSpeed, 0.16) + 0.4275 * curTemp * Math.pow(curSpeed, 0.16)).toFixed(0);
-    return windChill;
-  }
+  // function windChill(curTemp, curSpeed) {
+  //   var windChill = (35.74 + 0.6215 * curTemp - 35.75 * Math.pow(curSpeed, 0.16) + 0.4275 * curTemp * Math.pow(curSpeed, 0.16)).toFixed(0);
+  //   return windChill;
+  // }
   });
-//     let alertType = jsObject.alerts.event
-// let alertDes = jsObject.alerts.description
-//     document.querySelector('#alertType').innerHTML = alertType;
-// document.querySelector('#alertDes').innerHTML = alertDes;

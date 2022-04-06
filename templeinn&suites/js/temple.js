@@ -13,7 +13,7 @@ fetch(requestURL)
     temples.forEach(displayCard);
   });
 
-function displayCard(temples) {
+function displayCard(temples) { 
   // Create elements to add to the document
   let card = document.createElement('section');
   let templeName = document.createElement('h2');
@@ -24,6 +24,7 @@ function displayCard(temples) {
   let templeAddress = document.createElement('p');
   let templeClosure = document.createElement('p');
   let templeOS = document.createElement('p');
+  let pic = document.createElement('picture')
   let logo = document.createElement('img');
 
    // Change the innerHTML property of the h2 element to contain the buisness full name

@@ -21,8 +21,14 @@
 </head>
 <body>
     <header>
-        <h1>Temple Inn & Suites</h1>
-        <nav>
+        <h1 id="title">Temple Inn & Suites</h1>
+        <a  class="logo" href="index.html"><picture>
+            <img  src="images/temple-logo.png" alt="temple Inn and Suites logo">
+        </picture></a>
+        
+
+        <nav id="nav">
+            <button id="navBtn">&#9776;</button>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="temple.html">Temple</a></li>
@@ -33,13 +39,16 @@
         </nav>
         <div class="social">
             <a href="https://www.facebook.com/"><picture>
-                <img src="images/facebooklogos.jpg" alt="Facebook Logo">
+                <img class="slogo" src="images/facebooklogos.jpg" alt="Facebook Logo">
             </picture></a>
             <a href="https://www.instagram.com/"><picture>
-                <img src="images/instagram.png" alt="Instagram Logo">
+                <img class="slogo" src="images/instagram.png" alt="Instagram Logo">
             </picture></a>
         </div>
-   
+        <div>
+            <!-- <span id="alertType"></span>
+            <span id="alertDes"></span> -->
+        </div>    
     </header>
     <main>
         
@@ -48,12 +57,13 @@
     </main>
     <footer>
         <!-- logo -->
-        <picture>
-            <img src="" alt="">
-        </picture>
+        <a href="index.html"><picture>
+            <img src="images/temple-logo.png" alt="Temple Inn and Suites logo">
+        </picture></a>
 
-        <div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.405019701323!2d-77.09772048464716!3d38.98325177955754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b8f21f1%3A0x9a0b3cde14da0a60!2s4800%20Montgomery%20Ln%20%23300%2C%20Bethesda%2C%20MD%2020814%2C%20USA!5e0!3m2!1sen!2sca!4v1649023681584!5m2!1sen!2sca" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="map">
+            <!-- map link -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.405019701323!2d-77.09772048464716!3d38.98325177955754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b8f21f1%3A0x9a0b3cde14da0a60!2s4800%20Montgomery%20Ln%20%23300%2C%20Bethesda%2C%20MD%2020814%2C%20USA!5e0!3m2!1sen!2sca!4v1649023681584!5m2!1sen!2sca" width="200" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
         <div class="inline">
             <!-- contact number -->
@@ -65,7 +75,7 @@
             <p>&#x2709;</p>
             <p>Info@templeinnandsuites.com</p>
         </div>
-        <div>
+        <div class="wdd">
             <p>WDD-230    |    Jared McKay    </p>
             <p></p>
         </div>
