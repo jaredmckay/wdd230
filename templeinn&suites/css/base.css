@@ -2,6 +2,8 @@
 
 * {
     margin: auto;
+    font-family: 'Nanum Gothic', sans-serif;
+
 }
 
 body{
@@ -17,12 +19,15 @@ header, footer {
     
 }
 
+h1, h2, label {
+    font-family: 'Playfair Display', serif;
+}
+
 footer {
     margin-top: 2rem;
 }
 
 nav ul {
-    display: none;
     list-style: none;
 }
 nav ul.open {

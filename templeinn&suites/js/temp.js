@@ -13,15 +13,15 @@ fetch(apiURL)
     // let forecastDes = jsObject.daily.weather.main;
 
 
-    document.querySelector('#alertType').innerHTML = alertType;
-    document.querySelector('#alertDes').innerHTML = alertDes;
+    // document.querySelector('#alertType').innerHTML = alertType;
+    // document.querySelector('#alertDes').innerHTML = alertDes;
     document.querySelector('#current-temp').textContent = Math.round(curTemp);
     document.querySelector('#current-speed').textContent = Math.round(curSpeed);
     document.querySelector('#feel-like').textContent = Math.round(feelLike);
-    document.querySelector('#forecast-temp').textContent = Math.round(forecastTemp);
-    document.querySelector('#forecast-des').textContent = (forecastDes);
+    // document.querySelector('#forecast-temp').textContent = Math.round(forecastTemp);
+    // document.querySelector('#forecast-des').textContent = (forecastDes);
 
-    const iconsrc = `https://openweathermap.org/img/w/${jsObject.weather[0].icon}.png`;
+    const iconsrc = `https://openweathermap.org/img/w/${jsObject.current.weather[0].icon}.png`;
     const desc = jsObject.current.weather[0].description;
     
 
